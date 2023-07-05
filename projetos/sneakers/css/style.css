@@ -1,0 +1,99 @@
+/* Tudo que esta no site */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+/* Corpo do texto */
+
+body {
+    background-color: #d4d2d2;
+}
+
+/* Cabeçalho */
+
+.titulo {
+    background-color:  #3db36a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #2f8f54
+}
+
+/* Grid de Produtos */
+
+#produtos-container {
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+.divs {
+    display: inline-block;
+    padding: 40px;
+}
+
+
+.divs img {
+    width: 300px;
+    height: 300px;
+}
+
+.divs h3 {
+    color:  #3db36a;
+    font-size: 24px;
+    text-align: left;
+    border-left: 5px solid #2f8f54;
+    padding: 0px 0px 0px 7px;
+}
+
+.divs h4 {
+    margin-top: 7px;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: left;
+}
+
+.divs p {
+    text-align: left;
+    margin-top: 6px;
+}
+
+.divs button {
+    width: 300px;
+    height: 50px;
+    background-color:  #3db36a;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    transition: .3s;
+}
+
+.divs button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Rodapé */
+
+.copy {
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    background-color: #3db36a;
+    padding: 80px;
+    font-size: 20px;
+    border-top: 3px solid #2f8f54;
+}
+
+/* Texto em Negrito */
+
+.bold {
+    font-weight: bold;
+}

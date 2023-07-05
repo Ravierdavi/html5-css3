@@ -1,0 +1,388 @@
+/* Regras */
+@charset "UTF-8";
+
+@font-face {
+    font-family: CherryBombOne;
+    src: url(../fonts/CherryBombOne-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url(../fonts/PixelGameFont.ttf);
+}
+
+
+/* Configurações Globais */
+:root {
+    /* Fontes */
+    --fonte-principal: Pixel, cursive, Arial, Helvetica;
+    --fonte-tittle: CherryBombOne, cursive;
+    --font: Arial, Helvetica, sans-serif;
+
+    /* Cores */
+    --cor01: #387347;
+    --cor02: #69A62D;
+    --cor03: #D5D962;
+    --cor04: #F29E6D;
+    --cor05: #BF6565;
+    --cor-fundo: #e2e590;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--font);
+}
+
+/* Responsividade */
+@media (max-width: 950px) {
+    body > header > img.house-img {
+        margin-right: 2%;
+    }
+    
+    body > header > img.tree-img {
+        margin-left: 3.3%
+    }
+}
+
+@media (max-width: 840px) {
+    body > header > img.house-img {
+        display: none;
+    }
+    
+    body > header > img.tree-img {
+        margin-left: 4%
+    }
+}
+
+@media (max-width: 640px) {
+    body > header > img.house-img {
+        display: none;
+    }
+    
+    body > header > img.tree-img {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    * {
+        font-size: 99%;
+    }
+
+    body nav > a:first-child {
+        margin-left: -3px;
+    }    
+
+    a.a-img , img{
+        width: 22px;
+        display: inline-block;
+        margin-top: 2.5px;
+    }
+
+    body nav a.hhh{
+        margin-right: 8px;
+    }
+
+    body nav a.fff {
+        margin-right: 0;
+    }
+
+    body main > aside {
+        padding: 15px;
+    }
+    body main > aside > h1 {
+        margin: -15px -15px 0 -15px;
+    }
+}
+
+@media (max-width: 380px) {
+    a.a-img , img{
+        width: 20px;
+    }
+
+    body header > div > p {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 355px) {
+    a.a-img, a.a-img > img {
+        display: none;
+    }
+}
+
+@media (max-width: 300px) {
+    * {
+        font-size: 96%;
+    }
+
+    body main > aside {
+        padding: 6px;
+    }
+    body main > aside > h1 {
+        margin: -6px -6px 0 -6px;
+    }
+}
+
+/* Cabeçalho e Barra de Navegação */
+header {
+    background: linear-gradient(to top, var(--cor01), var(--cor02));
+    text-align: center;
+    color: white;
+}
+
+header > div {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+header > img {
+    margin-top: 15px;
+}
+
+header > img.house-img {
+    margin-right: 6%;
+}
+
+header > img.tree-img {
+    margin-left: 10%
+}
+
+header > div > h1 {
+    margin-top: 20px;
+    font: bold 4em var(--fonte-principal);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.800);
+}
+
+header > div > p {
+    max-width: 355px;
+    margin: 12px auto;
+    font: bold 1.2em var(--fonte-principal);
+    text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.8);
+    line-height: 33px;
+    text-align: center;
+}
+
+div.container {
+    display: table;
+    width: 100%;
+}
+
+nav {
+    vertical-align: top;
+    width: 100%;
+    position: relative;
+    min-height: 37px;
+    padding: 8px 8px 5px 8px;
+    background-color: #387347;
+    overflow: hidden;
+}
+
+nav > a.nav-a {
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 3px;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    font: 600 1.1em var(--font);
+    color: #7ac431;
+}
+
+nav > a:first-child {
+    margin-left: 5px;
+}
+
+nav > a.nav-a:hover {
+    transition: .3s;
+    background-color: var(--cor02);
+    color: #387347;
+}
+
+nav > a.a-img {
+    margin-right: 5px;
+    float: right;
+}
+nav > a.hhh {
+    margin-right: 15px;
+}
+
+/* Conteúdo Principal do Site */
+main {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.301);
+    background-color: #fff;
+}
+
+main img.mini01 {
+    display: block;
+    width: 100%;
+}
+
+main img.mini02 {
+    width: 100%;
+    border-radius: 2% 3% 2% 0;
+}
+
+main img.mini03 {
+    display: block;
+    width: 100%;
+}
+
+main img.mini04 {
+    display: block;
+    width: 100%;
+    border-radius: 5% 2%;
+}
+
+main picture.container-img-1 {
+    display: block;
+    max-width: 95%;
+    margin-left: 1.5%;
+}
+
+main picture.container-img-2 {
+    display: block;
+    float: left;
+    max-width: 50%;
+    margin: 10px 10px 0 0;
+}
+
+main picture.container-img-3 {
+    display: block;
+    max-width: 95%;
+    margin-left: 1.5%;
+}
+
+main picture.container-img-4 {
+    display: block;
+    float: left;
+    max-width: 50%;
+    margin: 13px 10px 0 0;
+}
+
+section.container-1 {
+    display: block;
+    float: left;
+    margin-bottom: 13px;
+}
+
+section.container-2 {
+    display: block;
+    float: left;
+    margin-bottom: 13px;
+}
+
+section p {
+    margin-top: 10px;
+    font: normal 1.1em var(--font);
+    text-indent: 20px;
+    line-height: 1.8em;
+    text-align: justify;
+}
+
+ul, ol {
+    list-style-position: inside;
+    font: normal 1.1em var(--font);
+}
+
+li {
+    margin-top: 5px;
+}
+
+main > picture {
+    display: block;
+    max-width: 800px;
+    max-height: 48.75px;
+    margin: 0 -10px -14px -10px;
+}
+
+main > picture > img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+main > article > h1 {
+    font: normal 3em var(--fonte-tittle);
+    color: rgb(230, 230, 13);
+    text-shadow: -2px 2px 0 rgba(0, 0, 0, 0.747);
+}
+
+main > article > h2::first-letter {
+    color: #326400;
+    font-size: 30px;
+    text-shadow: none;
+}
+
+main > article > h2 {
+    margin-top: 15px;
+    font: normal 2em var(--fonte-tittle);
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.747);
+    color: #57aa04;
+}
+
+main > article > h3 {
+    margin-top: 13px;
+    font: normal 1.6em var(--fonte-tittle);
+}
+
+main > article > p {
+    margin-top: 10px;
+    font: normal 1.1em var(--font);
+    text-indent: 20px;
+    line-height: 1.8em;
+    text-align: justify;
+}
+
+main > article > ul.list-tutor > li {
+    margin-top: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+main > aside {
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    background-color: var(--cor04);
+    border-radius: 10px 5px;
+}
+
+main > aside > h1 {
+    margin: -20px -20px 0 -20px;
+    padding-bottom: 5px;
+    background-color: var(--cor05);
+    border-radius: 10px 5px;
+    font: normal 2.1em var(--fonte-tittle);
+    text-align: center;
+    color: white;
+}
+
+main > aside > ul {
+    margin-top: 12px;
+    list-style: "\2714\00A0\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+
+/* Rodapé */
+footer {
+    padding: 5px;
+    background-color: var(--cor05);
+    text-align: center;
+}
+
+footer > p {
+    color: white;
+}

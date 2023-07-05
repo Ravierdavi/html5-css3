@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+    <style>
+        span {
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; font-size: 115%;">
+    <h1>alinhamento vertical</h1>
+    <h2>
+        Aprendemos que existem elementos que podem conter outros elementos. As &lt;div&gt; são um exemplo de elemento
+        contêiner.
+    </h2>
+
+    <p>
+        O significado de contêiner (versão do Inglês container) é simples e direto: " aquele que contém coisas ". Quando
+        você vai centralizar verticalmente uma caixa, é necessário ter a presença de um Container e de um Conteúdo.
+    </p>
+
+    <p>
+        Quando queremos centralizar blocos horizontalmente, aprendemos a usar o margin: auto; nas folhas de estilo. Mas
+        <mark>como fazer a centralização vertical?</mark>
+    </p>
+
+    <h3>
+        Considerando que temos um elemento dentro do outro e queremos centralizar verticalmente o elemento interno,
+        devemos:
+    </h3>
+
+    <ol>
+        <li>Atribuir uma classificação (id ou class) para ambos os elementos, pai e filho...</li>
+        <li>Posteriormente configurar o elemento pai com um "position: relative" e logo após configurar o elemento filho
+            com um "position: absolute".</li>
+        <li>No elemento filho, configurar ambas as Propriedades Auxiliares do position usadas nesse caso, left e top,
+            com um valor de 50% - Feito isso, a nossa caixa interna será centralizada verticalmente.</li>
+    </ol>
+
+    <p>
+        <span>É IMPORTANTE DESTACAR:</span> Com essa configuração, o elemento interno realmente será alinhado pelo
+        centro, mas tendo
+        como referência o CANTO SUPERIOR ESQUERDO DA CAIXA FILHO... resultando especificamente no alinhamento desse
+        ponto (canto superior esquerdo da box) e não da caixa como um todo.
+    </p>
+
+    <h3>
+        Para resolver isso, devemos mudar a posição do "ponto de alinhamento" da caixa filho para o CENTRO da box. Sendo
+        que por padrão, como já vimos, esse ponto é no canto superior esquerdo.
+    </h3>
+
+    <p>
+        Para transformar o "ponto de alinhamento" de uma caixa (mover a caixa), <mark>
+            usamos a Propriedade de Estilo "
+            transform ".
+        </mark>
+    </p>
+
+    <p>
+        Utilizando a propriedade transform é possível manipular visualmente um elemento (mover, rotacionar, dimensionar
+        e etc).
+    </p>
+
+    <p>
+        As funções mais usadas para o transform são: <mark>rotate, scale, skew e translate.</mark> Para centralizar o "ponto de
+        alinhamento" na nossa box, iremos usar a função <span>"translate".</span>
+    </p>
+
+    <ul>
+        <li>
+            translate - A função de translate serve para mover o elemento para os lados ou para cima/baixo. Mudar o seu
+            "ponto de alinhamento"... A sintaxe pode ser especifica para um dos eixos x/y ( translateX ou translateY ),
+            como
+            pode ser apenas translate, abrangendo os dois eixos ( x, y ). Obs.: Para ir para o lado esquerdo ou para
+            cima,
+            use valores negativos.
+        </li>
+
+        <li>
+            rotate - Como o nome já sugere, é utilizada para rotacionar o elemento, de 0 a 360 graus. Utilizando valores
+            positivos, a rotação será realizada no sentido horário e, utilizando valores negativos, no sentido
+            Anti-horário.
+        </li>
+
+        <li>
+            scale - Utilizado para redimensionar os elementos, tendo como escala padrão o valor "1". Valores maiores que
+            1,
+            aumentarão o tamanho do elemento, e valores menores que 1 diminuirão sua escala.
+        </li>
+
+        <li>skew - É utilizado para "distorcer" os elementos, alterando os ângulos.</li>
+    </ul>
+
+    <p>
+        <span>Nota:</span> A propriedade de estilo "transform" e suas funções é muito utilizada juntamente com a pseudo-classe
+        "hover" e com a propriedade de estilo "transition" para criar efeitos visuais.
+    </p>
+
+    <h3>
+        Entendido o conceito do transform e suas funções, usaremos a seguinte declaração para mudar/centralizar o "ponto
+        de alinhamento" da nossa box filho:
+    </h3>
+
+    <h4>transform: translate(-50%, -50%);</h4>
+
+    <p>
+        Como queremos posicionamento centralizado, na função "translate" inserimos valores negativos de "-50% -50%" para
+        deslocar o "ponto de alinhamento" da nossa caixa filho (metade do container... centro). O PRIMEIRO VALOR
+        representa o deslocamento horizontal do ponto, e o SEGUNDO VALOR representa o deslocamento vertical desse ponto.
+    </p>
+
+    <p>
+        Utilizamos valores em % para ajustar o ponto de referência exatamente no meio da box (-50% -50%), mas dependendo
+        do que você quer fazer, também pode usar valores em px ou outra unidade de medida.
+    </p>
+
+    <p>
+        Lembrando que aquilo que de fato está centralizando a caixa são os Positions e suas Propriedades Auxiliares
+        (left e top), a propriedade transform apenas mudou o ponto de referência da caixa filho
+    </p>
+
+</body>
+
+</html>

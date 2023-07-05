@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgroup</title>
+    <style>
+        pre {
+            font-weight: 600;
+            font-size: 1.3em;
+        }
+
+        section {
+            position: relative;
+            display: inline-block;
+            width: 480px;
+            height: 512px;
+            margin-left: 30px;
+            margin-right: 60px;
+        }
+
+        table {
+            position: absolute;
+            top: 40%;
+            transform: translate(0%, -50%);
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 6px;
+        }
+
+        th {
+            background-color: gray;
+        }
+
+        col.nome {
+            background-color: brown;
+        }
+
+        col.grupo {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <h1>AGRUPANDO COLUNAS:</h1>
+
+    <section>
+        <h2>Na parte de HTML:</h2>
+        <pre>
+        Ex:
+            &lt;table>
+                &lt;colgroup>
+                    &lt;col class="cnome">
+                    &lt;col class="c s e x o">
+                    &lt;col class="cidade">
+                    &lt;col class="cprof">
+                &lt;/colgroup>
+            &lt;/table>
+        </pre>
+        <h2>Na parte de CSS:</h2>
+        <pre>
+        Ex:
+            col.cnome {
+                    background-color: yellow;
+                }
+            col.c s e x o {
+                    background-color: green;
+                }
+        </pre>
+    </section>
+
+    <section>
+        <table>
+            <!-- ------------------------- -->
+            <colgroup>
+                <col class="nome">
+                <col class="grupo" span="2">
+            </colgroup>
+            <!-- ------------------------- -->
+            <caption>
+                Cadastro
+            </caption>
+            <thead>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pedro</td>
+                    <td>M</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>Beatriz</td>
+                    <td>F</td>
+                    <td>58</td>
+                </tr>
+                <tr>
+                    <td>Fábio</td>
+                    <td>M</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Severina</td>
+                    <td>F</td>
+                    <td>16</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <h2>Para grupo de colunas:</h2>
+
+    <h3>HTML:</h3>	
+    <pre>
+    Ex:
+        &lt;colgroup>
+            &lt;col class="cnome">
+            &lt;col class="cgrupo" span="2">	(2 colunas serão formatadas)
+            &lt;col class="cprof">
+        &lt;/colgroup>
+    </pre>
+
+	<h3>CSS:</h3>
+    <pre>
+    Ex:
+        col.cgrupo {
+                background-color: red;
+            }
+    </pre>
+</body>
+</html>

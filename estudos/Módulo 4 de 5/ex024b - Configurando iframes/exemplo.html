@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com configurações de iframes</title>
+    <style>
+        div.container {
+            width: 60%;
+            margin: auto;
+        }
+
+        iframe.first {
+            width: 35%;
+            height: 70vh;
+            margin-right: 10%;
+            border: 4px dashed yellow;
+        }
+
+        iframe.second {
+            width: 50%;
+            height: 70vh;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1><button><a href="iframe002.html">Back</a></button></h1>
+    <div class="container">
+        <iframe src="https://www.cursoemvideo.com" class="first">
+            [ Esse recurso não está disponível para você ]
+            Por isso acesse este site:
+            <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>
+        </iframe>
+        <iframe src="https://gustavoguanabara.github.io" class="second">
+            [ Esse recurso não está disponível para você ]
+            Por isso acesse este site:
+            <a href="https://gustavoguanabara.github.io">Repositório</a> do professor Guanabara
+        </iframe>
+    </div>
+</body>
+</html>

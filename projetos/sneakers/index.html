@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria dos Sneakers</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="titulo">
+        <h1>Galeria dos Sneakers</h1>
+    </header>
+
+    <!-- Grid de Produtos -->
+    <main class="container">
+
+        <section id="produtos-container">
+            <div class="divs zero">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRrKljGRd7Ow_KhcqYsfPn4DNk7a2XuZfTCzDNR5gm6eHlJ_l1dDBtRe2buIaiQmSwMlI7vaXi7_uU_vIkqYoa24FDVa46jIgDVb0kldwqN3fgdYwGcpIo5&usqp=CAE"
+                    alt="Mouse1">
+                <h3>Sneaker 1</h3>
+                <h4>Este Sneaker é muito bom pelo o fato de...</h4>
+                <p>R$ <span class="bold">129,99</span></p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="divs dois">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQEV65olNxVUqUshUN17eZESet-MdWg-WGP6bcWfDlM-t0PpVOoOD619ii5_pLmYUXw-oFnl7dpEiTPSfv_RseOA48dXAoxDSVVVh5l1qeBzzHZIVJraNSs&usqp=CAE"
+                    alt="Mouse2">
+                <h3>Sneaker 2</h3>
+                <h4>Este Sneaker é muito bom pelo o fato de...</h4>
+                <p>R$ <span class="bold">129,99</span></p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="divs tres">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQWqhrylXv51BsnrfuczXjdjGsmXygLdsGzKuMHMzkMntfyXaFim61HQd0th-8Q7FJZ3BvQn2mVmCFXueI8IST7GtRqmKwyP4OVFn0-34HA4fvm-YSuOllbMg&usqp=CAE"
+                    alt="Mouse3">
+                <h3>Sneaker 3</h3>
+                <h4>Este Sneaker é muito bom pelo o fato de...</h4>
+                <p>R$ <span class="bold">129,99</span></p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="divs">
+                <img src="https://imgs.extra.com.br/1525014905/1xg.jpg?imwidth=500" alt="Mouse4">
+                <h3>Sneaker 3</h3>
+                <h4>Este Sneaker é muito bom pelo o fato de...</h4>
+                <p>R$ <span class="bold">129,99</span></p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="divs">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxjo_31u17J0izBCg_EguNvjF9Vpmzrtu42pFBgPcCvtPbOK33B6nW4Je7n-lrrGQei0E&usqp=CAU"
+                    alt="Mouse5">
+                <h3>Sneaker 3</h3>
+                <h4>Este Sneaker é muito bom pelo o fato de...</h4>
+                <p>R$ <span class="bold">129,99</span></p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="divs">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6L4G89K7Oexc95OY2BEC3m-oEJW2ItmxcDA&usqp=CAU"
+                    alt="Mouse6" id="segredo">
+                <h3>Sneaker 3</h3>
+                <h4>Este Sneaker é muito bom pelo o fato de...</h4>
+                <p>R$ <span class="bold">129,99</span></p>
+                <button>Comprar</button>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="copy">
+        <p><span class="bold">Galeria dos Sneakers</span> &copy;2021</p>
+    </footer>
+
+    <script>
+        let img = document.querySelector(`#segredo`)
+        let c = 0
+
+        img.addEventListener("mouseenter", () => {
+            if (c % 2 == 0) {
+                img.src = `https://i.scdn.co/image/ab6761610000e5eb9319d939accc1f1e22155955`
+            } else {
+                img.src = `https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRrKljGRd7Ow_KhcqYsfPn4DNk7a2XuZfTCzDNR5gm6eHlJ_l1dDBtRe2buIaiQmSwMlI7vaXi7_uU_vIkqYoa24FDVa46jIgDVb0kldwqN3fgdYwGcpIo5&usqp=CAE`
+            }
+            ++c
+        })
+
+    </script>
+
+</body>
+
+</html>

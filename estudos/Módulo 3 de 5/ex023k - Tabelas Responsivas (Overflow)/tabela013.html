@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <h1>Tabelas responsivas - Overflow-x</h1>
+
+    <h2><a href="tabela014.html">Exemplo de Tabela Responsiva</a></h2>
+
+    <h3>Algumas tabelas às vezes ficam lateralmente muito grandes, fazendo com que o conteúdo acabe vazando em telas pequenas (celulares)... Resultando numa página com rolagem lateral, que é indesejada quando trabalhamos com responsividade.</h3>
+
+    <h3>Para resolver isso, devemos tornar a tabela da sua página responsiva. <mark>A primeira coisa que devemos fazer para ajeitar a formatação da nossa tabela é envelopar a tag &lt;table> (toda a tabela) com uma &lt;div></mark>, posteriormente identifique essa div com um id ou class (nome: container).</h3>
+
+    <h3>Em seguida, abra um seletor CSS para a div/class que acabamos de configurar (div.container {...} ) e insira a seguinte declaração:</h3>
+
+    <pre style="font-size: 1.4em; font-weight: 600;">
+    div.container {
+        overflow-x: auto;
+    }
+    </pre>
+
+    <hr>
+
+    <h3>O overflow é uma propriedade de estilo do CSS utilizada para tratar conteúdos que ultrapassam os limites de um elemento. O objetivo do overflow é fazer com que conteúdos muito grandes possam caber dentro de uma página através do uso de barras de rolagem.</h3>
+
+    <h3>Apenas com essa configuração já é suficiente para tornar a nossa tabela responsiva. Na prática, quando essa tabela for aberta numa tela com uma largura inferior à mesma, ela será "cortada" e exibida dentro de uma caixa com barras de rolagem horizontal, evitando o vazamento. </h3>
+
+    <h3>Toda essa adaptação ocorre de forma automática, isso se deve ao fato de usarmos o valor "auto". Esse valor (auto) exibe barras de rolagem somente quando necessário, somente quanto a largura do container se torna insuficiente para exibir o elemento.</h3>
+
+    <hr>
+
+    <h2>PROPRIEDADE - OVERFLOW:</h2>
+
+    <h3>Usamos a propriedade " overflow-x ", entretanto existem também o " overflow-y " e o " overflow ". Segue uma descrição de cada um deles:</h3>
+
+    <h3><mark>overflow-x</mark> - A propriedade CSS "overflow-x" é usada para definir o que deve ser mostrado quando o conteúdo transborda dos extremos esquerdo e direito de um elemento em bloco (eixo horizontal).</h3>
+
+    <h3><mark>overflow-y</mark> - A propriedade CSS "overflow-y" define o que deve ser mostrado quando o conteúdo transborda dos extremos superior e inferior de um elemento em bloco (eixo vertical).</h3>
+
+    <h3><mark>overflow</mark> - A propriedade CSS "overflow" é uma abreviação para as propriedades "overflow-x" e "overflow-y" em uma única declaração.</h3>
+
+    <hr>
+
+    <h2>As propriedades overflow aceitam alguns valores, dentre os principais:</h2>
+
+    <ul>
+        <li>
+            <h3><u>visible</u> - O valor "visible" exibe o conteúdo que exceder o tamanho do elemento fora da área designada para ele,  (valor padrão).</h3>
+        </li>
+        <li>
+            <h3><u>hidden</u> - O valor "hidden" simplesmente corta o conteúdo que exceder o tamanho do elemento.</h3>
+        </li>
+        <li>
+            <h3><u>scroll</u> - O valor "scroll" exibe "a todo momento" barras de rolagem para permitir que o usuário role o conteúdo que exceder o tamanho do elemento.</h3>
+        </li>
+        <li>
+            <h3><u>auto</u> - O valor "auto" exibe barras de rolagem somente quando necessário (largura ou altura insuficientes)</h3>
+        </li>
+    </ul>
+</body>
+</html>

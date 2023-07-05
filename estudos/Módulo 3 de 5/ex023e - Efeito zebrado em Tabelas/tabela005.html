@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito zebrado em Tabelas</title>
+</head>
+<body>
+    <h1>Efeito zebrado em Tabelas</h1>
+    <h3>Para criar o <mark>efeito zebrado</mark> dentro das linhas da sua tabela, é importante que determinemos em que parte da tabela queremos aplicar esse efeito, geralmente aplicamos somente nas linhas da parte do corpo da tabela (tbody).</h3>
+    <h3>Para fazer isso, basicamente devemos abrir um seletor para o elemento " tbody ", indicado o seu filho direto que queremos formatar, que no caso é o " tr " (linha de tabela)... No elemento tr, iremos usar a pseudo-classe " nth-child() ". Para essa pseudo-classe, devemos inserir um valor dentro dos parênteses: O valor para aplicar o efeito zebrado é o " 2n ", que faz com que o background-color configurado para a linha seja inserido de duas em duas linhas, uma sim e uma não (mude o valor numérico se desejar um intervalo maior de inserção).</h3>
+    <h3>Na pseudo-classe " nth-child() ", ao invés de usarmos o valor " 2n ", também podemos usar os valores nominais " even " OU " odd " (par ou ímpar). Com um desses dois nomes como valor, podemos deixar toda linha que é ímpar (odd) com background, ou vice-versa, se for o valor even.</h3>
+    <h3>Na pseudo-classe " nth-child() ", ao invés de usarmos o valor " 2n ", também podemos usar os valores nominais " even " OU " odd " (par ou ímpar). Com um desses dois nomes como valor, podemos deixar toda linha que é ímpar (odd) com background, ou vice-versa, se for o valor even.</h3>
+</body>
+</html>

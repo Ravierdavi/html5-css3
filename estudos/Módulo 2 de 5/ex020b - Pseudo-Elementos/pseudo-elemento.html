@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos em CSS</title>
+    <style>
+        pre {
+            font-size: 1.4em;
+        }
+        span {
+            text-decoration: underline;
+        }
+        ol > li {
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elementos em CSS</h1>
+    <h2>Elas são usadas apos o nome do elemento html, e tem-se os <mark>::</mark>, logo em seguida o nome da Pseudo-Classe. <mark>elemento + :: + Pseudo-Elemento</mark><br>Ex:</h2>
+    <h3>
+        <pre>
+    <span>div::before</span> {
+        content: "=>";
+    }
+        </pre>
+    </h3>
+
+    <h2>Exeplos de Pseudo-Elementos:</h2>
+    <ol type="1">
+        <li>::before
+        <li>::after
+        <li>::first-letter
+        <li>::first-line
+        <li>::selection
+        <li>::placeholder
+        <li>::marker
+        <li>::backdrop
+    </ol>
+
+</body>
+</html>

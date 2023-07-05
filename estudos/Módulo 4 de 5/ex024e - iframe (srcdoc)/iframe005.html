@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parâmetro srcdoc</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        pre {
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>Parâmetro srcdoc - <a href="exemplo.html">Exemplo</a></h1>
+
+    <h3>
+        <mark>Inicialmente</mark>, quando a nossa página primária for carregada, o nosso iframe interativo estará vazio. Isso se deve ao fato de que não especificamos nenhuma página dentro do parâmetro src dele...
+    </h3>
+
+    <h3>O ideal seria que colocássemos algum conteúdo dentro dele para ser exibido de forma inicial, antes que alguma página secundária seja renderizada de forma interativa.</h3>
+
+    <h3>Uma das maneiras de se fazer isso é você criar um arquivo separado e inserir o endereço desse arquivo no parâmetro src do iframe, funcionando como uma página padrão e inicial.</h3>
+
+    <h3>Essa página inicial pode conter informações como: " Escolha um das opções acima (páginas secundárias) " e alguma imagem em forma de logo.</h3>
+
+    <h3>
+        <mark>Entretanto,</mark> para um iframe interativo, <mark>também é possível fazer essa "página inicial" com o parâmetro " srcdoc </mark>". Esse parâmetro permite que adicionemos, como valor do parâmetro, especificações em HTML (h1, p, img e por aí vai). 
+    </h3>
+
+    <h3>Esse código HTML que inserirmos como valor de srcdoc será renderizado no nosso iframe interativo, funcionando justamente como uma página inicial.</h3>
+
+    <h3>Quando você decide usar o parâmetro srcdoc, <mark>a primeira coisa a se fazer</mark> é deletar o parâmetro padrão "src", e aí sim inserir o srcdoc... <mark>Substituir o src pelo srcdoc.</mark> Posteriormente insira o seu código HTML como valor de srcdoc.</h3>
+
+    <hr>
+
+    <h2>Exemplo:</h2>
+
+    <pre>
+    &lt;iframe srcdoc="&lt;h1>Escolha uma das opções acima&lt;/h1> 
+    &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente et atque aperiam&lt;/p> 
+    &lt;img src='imagens\cursoemvideo-logo-branca.png'>" name="frame">
+
+        &lt;p>Infelizmente o seu navegador não é compatível com essa funcionalidade&lt;/p>
+
+    &lt;/iframe>
+    </pre>
+
+    <h3>Dessa maneira geramos uma página inicial de forma estática para o nosso iframe sem precisar criar um arquivo separado.</h3>
+
+    <h3>Entretanto, o srcdoc tem a desvantagem que só podemos inserir um código básico em HTML, não dá pra fazer muita coisa além disso. Por isso a recomendação é que, caso você queira algo mais evoluído, fazer como foi dito anteriormente e criar um arquivo separado com o seu código HTML e inclusive CSS. Ao invés de criar um arquivo separado, você também pode inserir uma imagem como plano de fundo, background... É uma opção.</h3>
+</body>
+</html>

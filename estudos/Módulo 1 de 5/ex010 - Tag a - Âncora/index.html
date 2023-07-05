@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Externos/Internos</title>
+</head>
+<body>
+    <h1>Links Externos</h1>
+    <h2>Usamos a tag &lt;a&gt;&lt;/a&gt; junto com os parâmetros <mark>target</mark> e <mark>rel</mark></h2>
+    <p>Clicando <a href="http://www.google.com" target="_self">aqui</a> vamos para o Google na mesma página</p>
+
+    <p>Clicando <a href="http://www.google.com" target="_blank" rel="external">aqui</a> o Google será aberto em outra página</p>
+
+    <h1>Links internos</h1>
+    <p>Essa é a página principal, para acessar a próxima clique <a href="pag002.html" rel="next">AQUI</a>!</p>
+
+    <h1>Links para download</h1>
+    <h2>Podemos usar os parâmetros <span style="color: green;">type</span> e <span style="color: green;">download</span></h2>
+    <h3><mark>O parâmetro <span style="color: green;">type</span>:</mark> <br>
+        Os media types definem para que tipo de media um certo código CSS é direcionado. O HTML foi gerado para ser portátil, ou seja, lido e interpretado por qualquer tipo de dispositivo. Só que cada dispositivo exibe o HTML de uma maneira, devido a fatores como, por exemplo, as dimensões da tela.</h3>
+    <h3><mark>O parâmetro <span style="color: green;">download</span>:</mark> <br>
+    Colocamos o nome do arquivo em que desejamos baixar.</h3>
+    <ul>
+        <li><a href="livro/MAPADEV-2023.pdf" 
+            type="application/pdf" download="MAPADEV-2023.pdf">Meu livro em pdf</a></li>
+        <li><a href="livro/MAPADEV-2023.zip" download="MAPADEV-2023.zip" type="application/zip">Meu livro em zip</a></li>
+        <li><a href="#" download="MAPADEV-2023.pdf">Baixar meu livro sem <mark>href</mark></a></li>
+    </ul>
+</body>
+</html>

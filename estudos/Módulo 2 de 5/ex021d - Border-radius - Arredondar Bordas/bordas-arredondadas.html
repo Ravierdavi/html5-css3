@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-radius</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+        h1 {
+            font: bolder 2.4em Arial;
+            text-align: center;
+        }
+        section > div {
+            display: inline-block;
+            margin: 20px;
+            width: 250px;
+            height: 250px;
+            background-color: chocolate;
+        }
+        pre {
+            font-size: 1.3em;
+            font-weight: 900;
+            margin: 40px auto 0 5px;
+        }
+        #um {
+            border-radius: 30px;
+        }
+        #dois {
+            border-radius: 30px 5%;
+        }
+        #tres {
+            border-radius: 20px 40px 20px;
+        }
+        #quatro {
+            border-radius: 10px 0 24px 40px;
+        }
+        #cinco {
+            border-radius: 30px / 50px;
+        }
+        #seis {
+            border-radius: 30px 10% / 70px 50px;
+        }
+        #sete {
+            border-radius: 10px 5px 2em / 20px 25px 30%;
+        }
+        #oito {
+            border-radius: 10px 5% / 20px 25em 30px 35em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border-Radius</h1>
+    <section>
+        <div id="um">
+            <pre>
+#um {
+    border-radius: 30px;
+}
+            </pre>
+        </div>
+        <div id="dois">
+            <pre>
+#dois {
+    border-radius: 30px 
+    5%;
+}
+            </pre>
+        </div>
+        <div id="tres">
+            <pre>
+#tres {
+    border-radius: 20px
+     40px 20px;
+}
+            </pre>
+        </div>
+        <div id="quatro">
+            <pre>
+#quatro {
+    border-radius: 10px
+        0 24px 40px;
+}
+            </pre>
+        </div>
+    </section>
+    <section>
+        <div id="cinco">
+            <pre>
+#cinco {
+    border-radius: 30px / 
+    50px;
+}
+            </pre>
+        </div>
+        <div id="seis">
+            <pre>
+#seis {
+    border-radius: 30px 
+    10% / 70px 50px;
+}
+            </pre>
+        </div>
+        <div id="sete">
+            <pre>
+#sete {
+    border-radius: 10px 
+    5px 2em / 20px 
+    25px 30%;
+}
+            </pre>
+        </div>
+        <div id="oito">
+            <pre>
+#oito {
+    border-radius: 10px 
+    5% / 20px 25em 
+    30px 35em;
+}
+            </pre>
+        </div>
+    </section>
+    
+</body>
+</html>

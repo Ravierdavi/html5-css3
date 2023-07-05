@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        section {
+            position: relative;
+            max-width: 600px;
+            height: 414px;
+        }
+
+        pre {
+            font-size: 1.2em;
+            float: left;
+        }
+
+        table {
+            position: absolute;
+            top: 40%;
+            left: 70%;
+            transform: translate(-50%);
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Novas tags: &lt;table&gt; - &lt;tr&gt; - &lt;td&gt;</h1>
+    <h3>Hierarquia de Tabelas (simples): <mark>TABLE = tabela = &lt;table&gt;</mark> - <mark>TABLE ROW = linha de tabela = &lt;tr&gt;</mark> - <mark>TABLE HEADER = cabeçalho da tabela = &lt;th&gt;</mark> e <mark>TABLE DATA = dado de tabela = &lt;td&gt;</mark></h3>
+    <h3>A propriedade <mark>border-collapse em CSS</mark> é usada para definir as bordas da célula presente dentro da tabela e diz se essas células compartilharão uma borda comum ou não.</h3>
+    <section>
+        <pre>
+    &lt;table>
+        &lt;tr>
+            &lt;td>A1&lt;/td>
+            &lt;td>B1&lt;/td>
+            &lt;td>C1&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>A2&lt;/td>
+            &lt;td>B2&lt;/td>
+            &lt;td>C2&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>A3&lt;/td>
+            &lt;td>B3&lt;/td>
+            &lt;td>C3&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>A4&lt;/td>
+            &lt;td>B4&lt;/td>
+            &lt;td>C4&lt;/td>
+        &lt;/tr>
+    &lt;/table>
+        </pre>
+
+        <table>
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </table>
+    </section>
+    
+</body>
+</html>

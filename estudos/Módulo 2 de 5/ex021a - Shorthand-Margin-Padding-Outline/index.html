@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand Margin Padding Outiline Border</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        body > h1 {
+            margin: 0;
+            text-align: left;
+            font: bolder 2.3em sanserif;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+        }
+        .dois > div{
+            height: 240px !important;
+            
+        }
+        .container > div {
+            display: inline-block;
+            width: 280px;
+            height: 310px;
+            border: 5px solid red;
+            margin: 10px 0 0 10px;
+            padding: 0 0 0 10px;
+        }
+        pre {
+            font-size: 1.4em;
+        }
+        .margin {
+            margin: 10px;
+        }
+        .padding {
+            padding: 10px;
+        }
+        .border {
+            border: 3px solid blue;
+        }
+        .outline {
+            outline: 4px solid #ff0;
+        }
+        h3 {
+            height: 30px;
+            width: 200px;
+            text-align: center;
+            background-color: rgb(121, 121, 121);
+            color: rgb(21, 255, 0);
+        }
+        #especial {
+            margin: 10px 0 0 0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Normal -->
+    <h1>Nomal:</h1>
+
+    <main class="container">
+        <!-- Exemplo 1-->
+        <div id="especial">
+            <h2>Margin</h2>
+            <pre>
+.margin {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+            </pre>
+            <h3 class="margin">Margin teste</h3>
+        </div>
+
+        <!-- Exemplo 2-->
+        <div>
+            <h2>Padding</h2>
+            <pre>
+.padding {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+            </pre>
+            <h3 class="padding">Padding teste</h3>
+        </div>
+
+        <!-- Exemplo 3 -->
+        <div>
+            <h2>Border</h2>
+            <pre>
+.border {
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+}
+            </pre>
+            <h3 class="border">Border teste</h3>
+        </div>
+
+        <!-- Exemplo 4 -->
+        <div>
+            <h2>Outline</h2>
+            <pre>
+.outline {
+    outline-width: 4px;
+    outline-style: solid;
+    outline-color: #ff0;
+}
+            </pre>
+            <h3 class="outline">Outline teste</h3>
+        </div>
+    </main>
+
+    <!-- Shorthand -->
+    <h1>Shorthand:</h1>
+    <main class="container dois">
+        <!-- Exemplo 1 -->
+        <div>
+            <h2>Margin</h2>
+            <pre>
+.margin {
+    margin: 10px;
+}
+            </pre>
+            <h3 class="margin">Margin teste</h3>
+        </div>
+
+        <!-- Exemplo 2 -->
+        <div>
+            <h2>Padding</h2>
+            <pre>
+.padding {
+    padding: 10px;
+}
+            </pre>
+            <h3 class="padding">Padding teste</h3>
+        </div>
+
+        <!-- Exemplo 3 -->
+        <div>
+            <h2>Border</h2>
+            <pre>
+.border {
+    border: 3px solid blue;
+}
+            </pre>
+            <h3 class="border">Border teste</h3>
+        </div>
+
+        <!-- Exemplo 4 -->
+        <div>
+            <h2>Outline</h2>
+            <pre>
+.outline {
+    outline: 4px solid #ff0;
+}
+            </pre>
+            <h3 class="outline">Outline teste</h3>
+        </div>
+    </main>
+    
+</body>
+</html>

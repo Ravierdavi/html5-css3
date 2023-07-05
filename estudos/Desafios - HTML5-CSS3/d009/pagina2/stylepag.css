@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.link0 {
+    font-size: 18px;
+    color: red
+}
+
+.link2 {
+    font-size: 48px;
+    text-decoration: none;
+    color: green;
+    border: 5px solid black;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.link2:hover {
+    opacity: 30%;
+}
+
+p {
+    margin-top: 9px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.querySelector('teste')</code> está Monoespaçada, pois a tag <strong>&lt;code&gt;&lt;/code&gt;</strong> troca a fonte original pela <strong>Monoespace</strong>.</p>
+    <h3>Tag pre</h3>
+    <p>A tag &lt;pre&gt;&lt;/pre&gt; é usada para formatar o texto do jeito que você colou no seu editor de código.
+        <strong>Exemplo:</strong>
+    </p>
+    <p>
+        <pre>
+            <code>
+    <strong>></strong><mark>Cógido em JavaScript:</mark>
+    let inp = document.querySelector('input')
+    let btn = document.querySelector('button')
+    let p = document.querySelector('p')
+
+    btn.addEventListener('click', () => {
+        if (inp.value % 2 == 0) {
+            p.innerHTML = `O número é Par`
+        } else {
+            p.innerHTML = `O número é Ímpar`
+                    }
+    })
+            </code>
+        </pre>
+    </p>
+    <hr>
+
+    <h2>Citações simples</h2>
+    <p>A tag <strong>&lt;q&gt;</strong><strong>&lt;/q&gt;</strong> é usado para fazer uma citação, assim colocando a frase entre aspas >
+    Meu pais disse: <q>Vá lavar a louça!</q></p>
+
+    <h2>Citações Compostas</h2>
+    <p>A tag <strong>&lt;blockquote&gt;&lt;/blockquote&gt;</strong> é usado para fazer uma citação mais completa, utilizando o parâmetro <strong>cite</strong> para indicar em que site você pegou o texto, assim facilitando a busca sobre o criador do assunto.</p>
+    <blockquote cite="https://pt.wikipedia.org/wiki/Chile#S%C3%A9culo_XXhttps://pt.wikipedia.org/wiki/Chile#S%C3%A9culo_XX">
+        Chile, é um país da América do Sul que ocupa uma longa e estreita faixa costeira encravada entre a cordilheira dos Andes e o Oceano Pacífico.
+    </blockquote>
+    <hr>
+
+    <h2>Abreviações</h2>
+    <p>O trecho <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, foi abreviado pela tag <strong>&lt;abbr&gt;&lt;/abbr&gt;</strong>, dando o significado para a <strong>sigla ou palavra</strong> quando passa o cursor por cima.</p>
+    <hr>
+    <h1>FIM</h1>
+</body>
+</html>

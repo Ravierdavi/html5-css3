@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope em grupo - Extenso</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <h1>Scope em grupo Extenso - <a href="tabela011.html">Resumo</a></h1>
+
+    <h3>Como nós já sabemos, usamos a tag " th " sempre que queremos criar uma célula de título. Na sua tabela, esse título pode ser referente à uma COLUNA (dados abaixo da célula de título) ou uma LINHA (dados ao lado da célula de título)... Chamamos esse apontamento de onde estão os dados de escopo. </h3>
+
+    <h3>Anteriormente nós vimos como aplicar e utilizar escopos simples para os th, usando o parâmetro scope com os <mark>valores col ou row</mark>... Esses valores servem apenas para apontarmos colunas ou linhas de forma única (apenas uma linha ou coluna). Agora, se na nossa tabela temos uma célula de título que foi expandida e que abrange mais de uma linha ou mais de uma coluna, <mark>temos que utilizar os escopos de grupo.</mark></h3>
+
+    <h3><u>Obs.:</u> O W3C recomenda que você SEMPRE USE os escopos em toda e qualquer célula de título ( th ).</h3>
+
+    <hr>
+
+    <h2>ESCOPOS DE GRUPO:</h2>
+
+    <h3>Os escopos de grupo são os seguintes: <mark>" colgroup " e " rowgroup "</mark> (usar como valor no parâmetro "scope" ). Eles são utilizados para associarmos determinados títulos ( th EXPANDIDO ) à um GRUPO de linhas ou um GRUPO de colunas.</h3>
+
+    <h2>Basicamente, você deve usar os valores de escopo em grupo sempre que a sua célula de título abranger mais de uma linha (conjunto de linhas) ou mais de uma coluna (conjunto de colunas). Se você usar um valor simples (col/row) para apontar para um conjunto, somente a primeira linha ou a primeira coluna desse conjunto será considerada nesse apontamento... Isso não deve ser feito.</h2>
+
+    <h3><u>Nota:</u> Quando usamos expansão/mesclagem em uma célula de título, nós temos que analisar o apontamento do escopo pelo grupo e não pelo individual.</h3>
+
+    <h3>Entretanto, não é sempre que uma célula de título com expansão/mesclagem irá precisar ter um escopo em grupo. Por mais que o título tenha mesclagem, se os dados desse título estiverem em uma única linha por exemplo, o escopo deve ser simples. Uma célula de título expandida não obrigatoriamente tem que ter um escopo em grupo, é importante que você tenha essa noção e saiba avaliar cada caso.</h3>
+</body>
+</html>

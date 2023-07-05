@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Váriaveis em Css</title>
+    <style>
+        :root {
+            /* Fontes */
+            --font-family: Arial, Helvetica;
+            --font-family-pre: monospace;
+            --font-size-pre: 1.5em;
+
+            /* Cores */
+            --cor01: rgba(255, 57, 57, 0.733);
+            --cor02: rgba(100, 255, 100, 0.767);
+            --cor03: rgba(90, 90, 255, 0.76);
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 20px;
+        }
+
+        body > section > pre {
+            font-family: var(--font-family-pre);
+            font-size: var(--font-size-pre);
+        }
+
+        body > section > div {
+            display: inline-block;
+            margin-right: 10%;
+            width: 230px;
+            height: 200px;
+        }
+
+        #divum {
+            background-color: var(--cor01);
+        }
+
+        #divdois {
+            background-color: var(--cor02);
+        }
+
+        #divtres {
+            background-color: var(--cor03);
+        }
+
+        div > pre {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="margin-top: 10px;">Váriaveis em Css</h1>
+    <h2>A pseudo-classe CSS <mark>:root</mark> se equipara à raiz de uma árvore, que por sua vez representa o documento.
+        Aplicado ao HTML, <mark>:root</mark> representa o elemento &lt;html&gt; e é idêntico ao seletor html, exceto que
+        sua especificidade é mais alta.</h2>
+    <section>
+        <pre>:root {
+                /* Fontes */
+                --font-family: Arial, Helvetica;
+                --font-family-pre:  monospace;
+                --font-size-pre: 1.5em;
+        
+                /* Cores */
+                --cor01: #f00;
+                --cor02: #0f0;
+                --cor03: #00f;
+            }</pre>
+
+        <div id="divum">
+            <pre>
+#divum {
+background-color: var(--cor01);
+}
+            </pre>
+        </div>
+        <div id="divdois">
+            <pre>
+#divdois {
+background-color: var(--cor02);
+}
+            </pre>
+        </div>
+        <div id="divtres">
+            <pre>
+#divtres {
+background-color: var(--cor03);
+}
+            </pre>
+        </div>
+    </section>
+
+</body>
+
+</html>

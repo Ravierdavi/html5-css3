@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        section {
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            width: 450px;
+            margin: 0 20px 5px 0;
+        }
+        img:hover {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+            cursor: zoom-out;
+        }
+        section > div {
+            display: inline-block;
+            width: 350px;
+            height: 350px;
+            background-color: lightslategray;
+            margin: 20px 20px 60px 0;
+        }
+        pre {
+            margin-top: 80px;
+            font-size: 1.3em;
+        }
+        #um {
+            /* Box shadow */
+            box-shadow: 3px 3px 10px 3px black;
+        }
+        #dois {
+            /* Box shadow */
+            box-shadow: 3px 3px red, inset 3px 3px olive, -3px -3px pink;
+        }
+        #tres {
+            /* Box shadow */
+            box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.473);
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Shadow</h1>
+    <section>
+            <img src="img/code01.png" alt="code01">
+            <img src="img/code02.png" alt="code02">
+    </section>
+    <section>
+        <div id="um">
+            <pre>
+    #um {
+        box-shadow: 3px 
+        3px 10px 3px black;
+    }
+            </pre>
+        </div>
+        <div id="dois">
+            <pre>
+    #dois {
+        box-shadow: 3px 3px
+         red, inset 3px 3px 
+         olive, -3px -3px pink;
+    }
+            </pre>
+        </div>
+        <div id="tres">
+            <pre>
+    #tres {
+        box-shadow: 3px 
+        3px 10px 3px 
+        rgba(0, 0, 0, 0.473);
+    }
+            </pre>
+        </div>
+    </section>
+    
+</body>
+</html>

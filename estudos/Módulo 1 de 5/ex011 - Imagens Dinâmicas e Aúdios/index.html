@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias e HTML5</title>
+</head>
+<body>
+    <!-- Imagens dinâmicas -->
+    <h1>Imagens dinâmicas</h1>
+    <picture>
+        <source media="(min-width: 1030px)" srcset="Imagens/imagem-g.png" type="image/png">
+        <source media="(min-width: 730px)" srcset="Imagens/imagem-m.png" type="image/png">
+        <img src="Imagens/imagem-p.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo Aúdio</h1>
+    <h2 style="font-weight: 400;">
+        Utilizamos os parâmetros <mark>preload</mark> para escolher o tipo de carregamento do arquivo, com as opções: <strong>1 Metadata </strong>(Mais recomendável, pois carrega somente algumas informações da música), <strong> - 2 auto</strong> (Não recomendavél, pois carrega o arquivo junto com o site) - <strong>03 none</strong> (Não carrega nada do arquivo até que clique no play) --- <mark>autoplay</mark> para iniciar a música automaticamente. --- <mark>controls</mark> para aparecer os controles/informações do arquivo da música. --- <mark>loop</mark> quando acabar a música, ela recomeçar automaticamente.<br>
+        <strong>Opção 1:</strong>
+    </h2>
+
+    <audio src="midia/TyDreamyBird.mp3" controls></audio>
+
+    <h2>Opção 2:</h2>
+        <audio preload="metadata" controls>
+            <source src="midia/TyChillDown.mp3" type="audio/mpeg">
+            <source src="midia/TyChillDown.ogg" type="audio/ogg">
+            <source src="midia/TyChillDown.wav" type="audio/wav">
+            <p>Seu navegador não tem suporte aos nossos formatos de aúdio, <a href="midia/TyChillDown.mp3" download="TyChillDown.mp3" type="audio/mpeg">clique aqui</a> para baixar o aúdio em MP3!</p>
+        </audio>
+</body>
+</html>

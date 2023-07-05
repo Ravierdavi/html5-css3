@@ -1,0 +1,111 @@
+/* Regras */
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Passion One';
+    src: url("../fonts/PassionOne-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url("../fonts/Sriracha-Regular.ttf");
+}
+
+/* Configurações Globais */
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte1);
+    background-color: rgb(243, 243, 243);
+}
+
+/* Configurações extras */
+.negrito {
+    font-weight: bold;
+}
+
+/* Cabeçalho */
+header {
+    margin: 0 0 4.5vw 0;
+    padding: clamp(1px, 6vw, 30px) 0 clamp(1px, 9vw, 40px) 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    margin: 0 0 4px 0;
+    font-family: var(--fonte2);
+    font-size: calc(1em + 6vw);
+    font-variant: small-caps;
+}
+
+header > p {
+    font-size: calc(0.4em + 0.9vw);
+}
+
+header > p > a {
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+    color: rgb(128, 128, 128);
+}
+
+/* Main */
+main > section {
+    font-family: var(--fonte3);
+    font-weight: normal;
+    font-size: calc(0.5em + 2vw);
+    margin: 0 0 0 3vw;
+}
+
+main > section > p {
+    margin: 0 0 5vw 0;
+}
+
+main > section.img1 {
+    background: rgb(160, 160, 160) url("../imgs/background001.jpg") right center /cover no-repeat fixed;
+    box-shadow: inset 5px 5px 11px rgba(0, 0, 0, 0.678);
+    margin: 1vw 0 6vw 0;
+    padding: 6vw 0;
+}
+
+main > section.img2 {
+    background: rgb(160, 160, 160) url("../imgs/background002.jpg") right center /cover no-repeat fixed;
+    box-shadow: inset 5px 5px 11px rgba(0, 0, 0, 0.678);
+    margin: 1vw 0 6vw 0;
+    padding: 8vw 0;
+}
+
+section.img1 > p, section.img2 > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.575);
+    color: white;
+    margin: 0 0 0 3vw;
+}
+
+/* Rodapé */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 1.5vh 0;
+}
+
+footer > p {
+    color: white;
+    font-size: calc(0.3em + 0.9vw);
+}

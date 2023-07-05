@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caption - Escopo do th</title>
+    <style>
+        section {
+            display: inline-block;
+        }
+
+        section.sec1 {
+            width: 300px;
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 2px solid black;
+        }
+
+        th {
+            background-color: rgb(0, 161, 224);
+        }
+
+        caption {
+            font: bold 1.15em Arial;
+            background-color: rgb(94, 94, 94);
+        }
+    </style>
+</head>
+<body>
+    <section class="sec1">
+        <h1>Caption</h1>
+        <h3>A tag <mark>&lt;caption&gt;</mark> ela é usada como uma legenda/título explicativo de uma <strong>tabela</strong>.</h3>
+    </section>
+    <section class="sec12">
+        <table>
+            <caption>Caption</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Pessoa</th>
+                    <th scope="col">Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>Pietro</td>
+                    <td>58</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <h1>Escopo do TABLE HEAD (th) = scope=""</h1>
+    <h3>Esse parâmetro é importante para que os <mark>mecanismos de busca (google por ex)</mark> consigam analisar dos dados da sua tabela de forma coerente, de forma que faça sentido. Tais parâmetros não causam nenhum resultado visual, mas é muito útil de um ponto de vista semântico.</h3>
+    <h2>Valores:</h2>
+    <h3>Se o título da sua célula for para uma <mark>COLUNA</mark>, use como definição do parâmetro <mark>" scope " o VALOR " col "</mark>.</h3>
+    <h3>Se o título da sua célula for para uma <mark>LINHA</mark>, use como definição do parâmetro <mark>" scope " o VALOR " row "</mark>.</h3>
+</body>
+</html>
