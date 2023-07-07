@@ -1,0 +1,78 @@
+/* Regras */
+@charset "UTF-8";
+
+/* Media */
+@media screen and (orientation: landscape) {
+    body > section > a {
+        display: block;
+        margin: 1vw;
+        width: clamp(20px, 10px + 6vw, 60px);
+        height: clamp(20px, 10px + 6vw, 60px);
+    }
+}
+/* Configurações Gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: #9b5402 url("../imgs/fundo-madeira.jpg") center top /cover no-repeat fixed;
+}
+
+/* Principal */
+div.cellphone {
+    display: inline-block;
+    width: 44vh;
+    height: 90vh;
+    background: transparent url("../imgs/frame-iphone.png") center top /contain no-repeat fixed;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.cellphone > iframe {
+    display: inline-block;
+    width: 38vh;
+    height: 68vh;
+    position: absolute;
+    top: 50.5%;
+    left: 50.3%;
+    transform: translate(-50%, -50%);
+}
+
+section {
+    position: absolute;
+    right: 0;
+    top: 2%;
+}
+
+section > a {
+    display: block;
+    cursor: pointer;
+    margin: 2vw;
+    width: clamp(20px, 60px + 6vw, 75px);
+    height: clamp(20px, 60px + 6vw, 75px);
+}
+
+section > a:hover {
+    transition: 0.2s;
+    margin: 0 9px 20px 0;
+}
+
+section > a > img {
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+section > a > img:hover {
+    transition: 2s;
+    border: 1.5px solid rgb(255, 255, 255);
+}
