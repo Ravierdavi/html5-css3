@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com input de checkbox e radio</title>
+    <style>
+        ul {
+            padding: 0;
+            width: 30%;
+            columns: 2;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h1><button><a href="form008.html">Back</a></button></h1>
+    <form action="script.js" method="get">
+        <fieldset>
+            <legend>Seu sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="sexomasculino" required value="M" checked>
+                <label for="sexomasculino">Masculino </label>
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="sexofeminino" required value="F">
+                <label for="sexofeminino">Feminino </label>
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="prefironaodizer" required value="PND">
+                <label for="prefironaodizer">Prefiro não dizer</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Jogos favoritos</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" name="jogos" id="jminecraft" value="Minecraft">
+                    <label for="jminecraft">Minecraft</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="jogos" id="jfortnite" value="Fortnite">
+                    <label for="jfortnite">Fortnite</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="jogos" id="jgta" value="GTA">
+                    <label for="jgta">GTA</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="jogos" id="jclashofclans" value="Clash of clans">
+                    <label for="jclashofclans">Clash of clans</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="jogos" id="jsupermario" value="Super Mario">
+                    <label for="jsupermario">Super Mario</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="jogos" id="jsonic" value="Sonic">
+                    <label for="jsonic">Sonic</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="jogos" id="jroblox" value="Roblox">
+                    <label for="jroblox">Roblox</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="jogos" id="jfreefire" value="Free Fire">
+                    <label for="jfreefire">Free Fire</label>
+                </li>
+            </ul>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

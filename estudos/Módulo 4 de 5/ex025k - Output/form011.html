@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            margin-left: 15px;
+        }
+
+        pre {
+            font-size: 1.36em;
+            font-weight: 600;
+        }
+
+        section {
+            border-bottom: 2px solid black;
+            padding: 7px;
+        }
+
+        mark.verde {
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Output - <a href="exemplo.html">Exemplo</a></h1>
+
+    <section>
+        <h2>Output:</h2>
+            <h3>
+                <mark>&lt;output></mark> - <mark>&lt;/output></mark>
+            </h3>
+            <h3>- Não envia dados, apenas mostra algum tipo de resultado na tela.</h3>
+        <h3>Ex: </h3>
+        <pre>
+    &lt;form action="cadastro php" method="get" autocomplete="on">
+            &lt;p>
+                &lt;label for="in1">Número 1: &lt;/label>
+                &lt;input type="number" name="n1" id="in1" min="0" max="50" required
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            &lt;/p>
+            &lt;p>
+                &lt;label for="in2">Número 2: &lt;/label>
+                &lt;input type="number" name="n2" id="in2" min="0" max="50" required
+                            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            &lt;/p>
+            &lt;p>
+                &lt;label for="isoma">Soma: &lt;/label>
+                &lt;output name="soma" id="isoma">0&lt;/output>
+                (Valor inicial "0", depois será mostrado a soma entre o Número 1 e o Número 2)
+            &lt;/p>
+            &lt;p>
+                &lt;input type="submit" value="Enviar">
+                &lt;input type="reset" value="Limpar" onclick="isoma.innerHTML = Number(0)">
+            &lt;/p>
+        &lt;/form>
+        </pre>
+    </section>
+</body>
+</html>

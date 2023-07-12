@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input de color - range - file</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            margin-left: 15px;
+        }
+
+        pre {
+            font-size: 1.36em;
+            font-weight: 600;
+        }
+
+        section {
+            border-bottom: 2px solid black;
+            padding: 7px;
+        }
+
+        mark.verde {
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Input de COLOR, RANGE e FILE - <a href="exemplo.html">Exemplo</a></h1>
+    <section>
+        <h2>Input:color</h2>
+            <h3>
+                <mark>&lt;input type="color" name=" " id=" "></mark>
+            </h3>
+        <h3>- Pode ser definida uma cor inicial, usando o atributo value=" ".</h3>
+            <h3>Ex:</h3>
+                <pre>
+    &lt;label for="icor">Cor: &lt;/label>
+                &lt;input type="color" name="cor" id="icor" value="#00ff00">
+                </pre>
+    </section>
+
+
+    <section>
+        <h2>Input:range</h2>
+            <h3>
+                <mark>&lt;input type="range" name=" " id=" "></mark>
+            </h3>
+        <h3>- Por padrão, o range começa sempre em 50 (no meio), variando de 0 a 100, mas pode ser personalizado, utilizando os atributos value=" ", min=" " e max=" ", respectivamente.</h3>
+            <h3>Ex:</h3>
+            <pre>
+    &lt;label for="inivel">Nível de Satisfação: &lt;/label>
+        &lt;input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+            </pre>
+    </section>
+
+
+    <section>
+        <h2>Input:file</h2>
+            <h3>
+                <mark>&lt;input type="file" name=" " id=" "></mark>
+            </h3>
+            <h3>- Ao trabalhar com input:file, usar sempre o atributo method="POST" dentro da tag <form>, para que não haja uma limitação de 3.000 bites no envio do arquivo.</h3>
+            <h3>Ex:</h3>
+                <pre>
+    &lt;form action="cadastro.php" method="POST" autocomplete="on">
+                    &lt;p>
+                        &lt;label for="ifoto">Foto do perfil: &lt;/label>
+                        &lt;input type="file" name="foto" id="ifoto">
+                    &lt;/p>
+                &lt;/form>
+                </pre>
+    </section>
+</body>
+</html>

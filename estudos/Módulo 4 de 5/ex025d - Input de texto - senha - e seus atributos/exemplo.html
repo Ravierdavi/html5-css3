@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com input de texto e senha junto com seus atrubutos</title>
+</head>
+<body>
+    <h1><button><a href="form004.html">Back</a></button></h1>
+
+    <form action="script.js" method="post" autocomplete="on">
+        <p>
+            <label for="iuser">Username: </label>
+            <input type="text" name="user" id="iuser" required minlength="4" maxlength="10" size="15" placeholder="Username" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="6" maxlength="12" size="17" placeholder="Password" autocomplete="new-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+</body>
+</html>

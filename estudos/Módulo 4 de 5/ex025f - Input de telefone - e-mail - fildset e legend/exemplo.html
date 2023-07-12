@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com input de e-mail, telefone - junto com fieldset e legend</title>
+</head>
+<body>
+    <h1><button><a href="form006.html">Back</a></button></h1>
+    <form action="script.js" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="ie-mail">E-mail:</label>
+                <input type="email" name="e-mail" id="ie-mail" required maxlength="50" size="15" placeholder="e-mail" autocomplete="email">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" required maxlength="20" size="12" placeholder="(xx)xxxx-xxxx" autocomplete="tel">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select - Datalist - Textarea</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            margin-left: 15px;
+        }
+
+        pre {
+            font-size: 1.36em;
+            font-weight: 600;
+        }
+
+        section {
+            border-bottom: 2px solid black;
+            padding: 7px;
+        }
+
+        mark.verde {
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select, Datalist, Textarea - <a href="exemplo.html">Exemplo</a></h1>
+    <section>
+        <h2>select</h2>
+            <h3>
+                <mark>&lt;select name="" id="">&lt;/select></mark>
+            </h3>
+        <h3>É utilizado junto com as tags <mark>&lt;option value="PE">Pernambuco&lt;/option></mark> e <mark>&lt;optgroup label="Times do Norte">&lt;/optgroup></mark></h3>
+            <h3>Ex:</h3>
+                <pre>
+    &lt;label for="times">Seu time favorito:&lt;/label>
+    <mark class="verde">&lt;select name="time" id="times" required></mark>
+        &lt;option <mark class="verde">disabled selected</mark>>---Escolha seu time de coração---&lt;/option>
+        &lt;optgroup label="Times são paulinos">
+            <mark class="verde">&lt;option value="SP">São Paulo&lt;/option></mark>
+            &lt;option value="PAL">Palmeiras&lt;/option>
+            &lt;option value="SAN">Santos&lt;/option>
+        &lt;/optgroup>
+        <mark class="verde">&lt;optgroup label="Times cariocas"></mark>
+            &lt;option value="FLA">Flamengo&lt;/option>
+            &lt;option value="FLU">Fluminense&lt;/option>
+            &lt;option value="VAS">Vasco&lt;/option>
+        &lt;/optgroup>
+        &lt;optgroup label="Times nordestinos">
+            &lt;option value="FOR">Fortaleza&lt;/option>
+            &lt;option value="SPOR">Sport&lt;/option>
+            &lt;option value="BAH">Bahia&lt;/option>
+        &lt;/optgroup>
+    &lt;/select>
+                </pre>
+    </section>
+
+
+    <section>
+        <h2>datalist</h2>
+            <h3>
+                <mark><datalist id=""></datalist></mark>
+            </h3>
+        <h3>Ela possui as mesmas tags e atributos utilizados no <mark>select</mark>. É necessário de um <mark>input de texto</mark>. Para fazer a ligação é necessário usar o atributo <mark>list</mark> com o valor do id da datalist dentro da tag: <u>&lt;input type="text" name="texto" id="texto" <mark>list="lista"</mark>></u> - <u>&lt;datalist <mark>id="lista"</mark>>&lt;/datalist></u></h3>
+            <h3>Ex:</h3>
+            <pre>
+    &lt;label for="csalgados">Salgados: &lt;/label>
+    &lt;input type="text" name="salgado" id="csalgados" <mark class="verde">list="lista-de-salgados"></mark>
+    <mark class="verde">&lt;datalist id="lista-de-salgados"></mark>
+        &lt;optgroup label="Padaria">
+            &lt;option value="Pastel">Pastel&lt;/option>
+            &lt;option value="Pão-pizza">Pão-pizza&lt;/option>
+            &lt;option value="Empadona">Empadona&lt;/option>
+        &lt;/optgroup>
+        &lt;optgroup label="Festa">
+            &lt;option value="Rabo-de-tatu">Rabo-de-tatu</option>
+            &lt;option value="Coxinha">Coxinha&lt;/option>
+            &lt;option value="Cachorro-quente">Cachorro-quente&lt;/option>
+        &lt;/optgroup>
+    &lt;/datalist>
+            </pre>
+    </section>
+
+
+    <section>
+        <h2>textarea</h2>
+            <h3>
+                <mark>&lt;textarea name="" id="" cols="30" rows="10"></textarea></mark>
+            </h3>
+            <h3>Utiliza-se os atributos <mark>cols=""</mark> e <mark>rows=""</mark> para se definir o tamanho da área (mesmo definindo o tamanho, ela não hávera limite de texto a se escrever). Para definir-se o total de caracteres a ser escrito usamos o atributo <mark>maxlength=""</mark></h3>
+            <h3>Ex:</h3>
+                <pre>
+    &lt;textarea name="area" id="areatexto" cols="30" rows="10" maxlength="20" placeholder="Digite aqui!!!!"></textarea>
+                </pre>
+    </section>
+</body>
+</html>

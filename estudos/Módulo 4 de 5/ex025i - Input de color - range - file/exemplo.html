@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com input de color - range - file</title>
+</head>
+<body>
+    <h1><button><a href="form009.html">Back</a></button></h1>
+    <form action="script.js" method="post">
+        <fieldset>
+            <legend>Escolha uma cor</legend>
+            <p>
+                <label for="color">Cor: </label>
+                <input type="color" name="cor" id="color" value="#00ff00">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha o nível de 1 a 15</legend>
+            <p>
+                <label for="range">Nível: </label>
+                <input type="range" name="nivel" id="range" min="1" max="15" value="8">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha um arquivo: </legend>
+            <p>
+                <label for="file">Arquivo: </label>
+                <input type="file" name="arquivo" id="file">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

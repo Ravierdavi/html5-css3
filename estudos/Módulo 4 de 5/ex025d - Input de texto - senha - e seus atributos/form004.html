@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input de texto e de senha com seus atributos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        pre {
+            font-size: 1.35em;
+            font-weight: 600;
+        }
+
+        mark.verde {
+            background-color: rgb(0, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Input de texto e de senha com seus atributos - <a href="exemplo.html">Exemplo</a></h1>
+
+    <h2>Input de texto:</h2>
+
+	<h3><mark>&lt;input type="text" name=" " id=" "></mark></h3>
+
+	<h3>Ex:</h3>	
+    <pre>
+    &lt;p>
+        &lt;label for="iusu">Usuário: &lt;/label>
+        <mark class="verde">&lt;input type="text" name="usu" id="iusu"></mark>
+    &lt;/p>
+    </pre>
+
+    <hr>
+
+    <h2>Input de senha:</h2>
+
+        <h3><mark>&lt;input type="password" name=" " id=" "></mark></h3>
+
+        <h3>Ex:	</h3>
+        <pre>
+        &lt;p>
+            &lt;label for="isen">Senha: &lt;/label>
+            <mark class="verde">&lt;input type="password" name="sen" id="isen"></mark>
+        &lt;/p>
+        </pre>
+
+    <hr>
+
+    <h2>Input para limpar formulário:</h2>
+
+        <h3>
+            <mark>&lt;input type="reset" value=" "></mark>
+        </h3>
+
+        <h3>Ex:	</h3>
+        <pre>
+        &lt;p>
+            <mark class="verde">&lt;input type="reset" value="Limpar"></mark>
+        &lt;/p>
+        </pre>
+
+    <hr>
+
+    <h2>Criar campo de preenchimento obrigatório:</h2>
+
+        <h3>- Usar no input o parâmetro: <mark>required</mark></h3>
+
+        <pre>
+        &lt;input type="text" name="usu" id="iusu" <mark class="verde">required</mark>>
+        
+        &lt;input type="password" name="sen" id="isen" <mark class="verde">required</mark>>
+        </pre>
+
+    <hr>
+
+    <h2>Tamanho mínimo e máximo de caracteres:</h2>
+
+        <h3>
+            <mark>minlength=" "</mark>	-  <mark>maxlength=" "</mark>
+        </h3>
+
+        <pre>
+        &lt;input type="text" name="usu" id="iusu" required <mark class="verde">minlength="5"</mark> <mark class="verde">maxlength="15"</mark>>
+        &lt;input type="password" name="sen" id="isen" required <mark class="verde">minlength="8"</mark> <mark class="verde">maxlength="20"</mark>>
+        </pre>
+
+    <hr>
+
+    <h2>Largura da caixa de texto (em nº de caracteres):</h2>
+
+        <h3>
+            <mark>size=" "</mark>
+        </h3>
+
+        <pre>
+        &lt;input type="text" name="usu" id="iusu" required minlength="5" maxlength="15"  <mark class="verde">size="10"</mark>>
+        &lt;input type="password" name="sen" id="isen" required minlength="8" maxlength="20" <mark class="verde">size="8"</mark>>
+        </pre>
+
+    <hr>
+
+    <h2>Usando placeholder (dica de preenchimento):</h2>
+
+        <h3>
+            <mark>placeholder=" "</mark>
+        </h3>
+
+        <pre>
+        &lt;input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" <mark class="verde">placeholder="nome do usuário"></mark>
+        &lt;input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="12" <mark class="verde">placeholder="mínimo 8 letras"></mark>
+        </pre>
+
+    <hr>
+
+    <h2>Autocomplete dentro do input (informação do que será preenchido):</h2>
+
+        <h3>1) Dentro da tag &lt;form>, devemos ter autocomplete="on";</h3>
+        <h3>
+            2) Dentro do input, inserir mais um autocomplete=" ". Nesse caso teremos mais opções
+            de preenchimento (ex: nickname, username, organization, current password,...).
+        </h3>
+
+    <pre>
+        &lt;form action="cadastro.php" method="post" <mark class="verde">autocomplete="on"</mark>>
+            &lt;p>
+                &lt;label for="iusu">Usuário: &lt;/label>
+                &lt;input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do
+                    usuário" <mark class="verde">autocomplete="username"</mark>>
+            &lt;/p>
+        &lt;/form>
+    </pre>
+</body>
+</html>

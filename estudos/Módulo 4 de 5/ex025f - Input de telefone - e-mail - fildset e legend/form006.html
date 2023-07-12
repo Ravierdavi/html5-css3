@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input de telefone e e-mail - fieldset e legend</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            margin-left: 15px;
+        }
+
+        pre {
+            font-size: 1.36em;
+            font-weight: 600;
+        }
+
+        section {
+            border-bottom: 2px solid black;
+            padding: 7px;
+        }
+
+        mark.verde {
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Input de telefone e e-mail - fildset e legend - <a href="exemplo.html">Exemplo</a></h1>
+    <section>
+        <h2>Input de telefone</h2>
+        <h3>
+            <mark>&lt;input type="tel" name="" id=""></mark>
+        </h3>
+        <h3>Ex:</h3>
+        <pre>
+    &lt;input type="tel" name="telefone" id="itelefone">
+        </pre>
+    </section>
+
+    <section>
+        <h2>Input de e-mail</h2>
+        <h3><mark>&lt;input type="email" name="" id=""></mark></h3>
+
+        <h3>Ex:</h3>
+        <pre>
+    &lt;input type="email" name="e-mail" id="ie-mail">
+        </pre>
+    </section>
+
+    <section>
+        <h2>fieldset</h2>
+        <h3>O elemento HTML <mark>&lt;fieldset></mark> é usado para agrupar elementos, assim como <mark>labels (&lt;label>)</mark>, dentro de um formulário web.</h3>
+        <h3>Ex:</h3>
+        <pre>
+    <mark class="verde">&lt;fieldset></mark>
+        &lt;legend>Dados pessoais&lt;/legend>
+        &lt;p>
+            &lt;label for="ie-mail">E-mail:&lt;/label>
+            &lt;input type="email" name="e-mail" id="ie-mail" required maxlength="50" size="15" placeholder="e-mail" autocomplete="email">
+        &lt;/p>
+        &lt;p>
+            &lt;label for="itelefone">Telefone:&lt;/label>
+            &lt;input type="tel" name="telefone" id="itelefone" required maxlength="20" size="12" placeholder="(xx)xxxx-xxxx" autocomplete="tel">
+        &lt;/p>
+    <mark class="verde">&lt;/fieldset></mark>
+        </pre>
+    </section>
+
+    <section>
+        <h2>legend</h2>
+        <h3>A tag <mark>&lt;legend></mark> é usada dentro da tag <mark>&lt;fieldset></mark> tendo o papel de uma legenda/título do fieldset.</h3>
+
+        <h3>Ex:</h3>
+        <pre>
+    &lt;fieldset>
+        <mark class="verde">&lt;legend>Dados pessoais&lt;/legend></mark>
+        &lt;p>
+            &lt;label for="ie-mail">E-mail:&lt;/label>
+            &lt;input type="email" name="e-mail" id="ie-mail" required maxlength="50" size="15" placeholder="e-mail" autocomplete="email">
+        &lt;/p>
+        &lt;p>
+            &lt;label for="itelefone">Telefone:&lt;/label>
+            &lt;input type="tel" name="telefone" id="itelefone" required maxlength="20" size="12" placeholder="(xx)xxxx-xxxx" autocomplete="tel">
+        &lt;/p>
+    &lt;/fieldset>
+        </pre>
+    </section>
+
+</body>
+</html>

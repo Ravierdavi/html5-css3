@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com output</title>
+</head>
+
+<body>
+    <h1><button><a href="form011.html">Back</a></button></h1>
+
+    <form action="script.js" method="post">
+        <fieldset>
+            <legend>Quantos anos você tem?</legend>
+            <p>
+                <label for="iidade">Idade: </label>
+                <input type="range" name="idade" id="iidade" min="1" max="150" value="50" oninput="iresi.innerHTML = iidade.value">
+                <output id="iresi">50</output>
+            </p>
+                
+        </fieldset>
+        <fieldset>
+            <legend>Idade</legend>
+            <p>
+                <label for="idata">Sua data de nascimento:</label>
+                <input type="date" name="data" id="idata" oninput="calcidade()">
+            </p>
+            <p>
+                <label for="ires">Sua idade: </label>
+                <strong>
+                    <output id="ires">0</output>
+                </strong>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" onclick="ires.innerHTML = '0'; iresi.innerHTML = '50'">
+        </p>
+    </form>
+
+    <script>
+        let res = document.querySelector("output#ires")
+        let aano = new Date().getFullYear()
+        let ames = new Date().getMonth() + 1
+        let adia = new Date().getDate()
+
+        function calcidade() {
+            let data = String(idata.value)
+            let ano = Number(data.substring(0, 4))
+            let mes = Number(data.substring(5, 7))
+            let dia = Number(data.substring(8, 10))
+            let idade = aano - ano
+
+            if (idade == 0 || mes <= ames && dia < adia && idade < 2) {
+                window.alert("Coloque uma data válida!")
+                idata.value = "dd/mm/aaaa"
+                res.innerHTML = "0"
+            } else {
+                if (mes >= ames && dia > adia) {
+                    res.innerHTML = `${idade} ${plural("1", idade)}`
+                } else if (mes == ames && dia == adia) {
+                    res.innerHTML = `Você está fazendo ${idade} ${plural("1", idade)} hoje! <br>
+                    Parabéns!!!!!!!!!!!!!!!!`
+                } else if (mes == ames && dia < adia) {
+                    res.innerHTML = `${idade - 1} ${plural("1", idade - 1)}. <br>
+                    ${plural("2", adia - dia)} ${adia - dia} ${plural("3", adia - dia)} para o seu aniversário!!`
+                } else if (mes < ames && dia == adia) {
+                    res.innerHTML = `${idade - 1} ${plural("1", idade - 1)}. <br>
+                    ${plural("2", adia - dia)} ${ames - mes} ${plural("4", ames - mes)} para o seu aniversário!!`
+                } else if (mes < ames && dia < adia) {
+                    res.innerHTML = `${idade - 1} ${plural("1", idade - 1)}. <br>
+                    ${plural("2", adia - dia)} ${ames - mes} ${plural("4", ames - mes)} e ${adia - dia} ${plural("3", adia - dia)} para o seu aniversário!!`
+                }
+            }
+        }
+
+        function plural(num1, num2) {
+            if (num1 == "1") {
+                let res = num2 == 1 ? "ano" : "anos"
+                return res
+            } else if (num1 == "2") {
+                let res = num2 == 1 ? "Falta" : "Faltam"
+                return res
+            } else if (num1 == "3") {
+                let res = num2 == 1 ? "dia" : "dias"
+                return res
+            } else if (num1 == "4") {
+                let res = num2 == 1 ? "mês" : "meses"
+                return res
+            }
+        }
+    </script>
+</body>
+
+</html>

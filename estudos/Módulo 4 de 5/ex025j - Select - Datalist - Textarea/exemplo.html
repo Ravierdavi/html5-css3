@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com select - datalist - textarea</title>
+    <style>
+        fieldset {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1><button><a href="form010.html">Back</a></button></h1>
+
+    <form action="script.js" method="post" autocomplete="on">
+        <fieldset>
+            <label for="times">Seu time favorito:</label>
+    <select name="time" id="times" required>
+        <option disabled selected>---Escolha seu time de coração---</option>
+        <optgroup label="Times são paulinos">
+            <mark class="verde"><option value="SP">São Paulo</option></mark>
+            <option value="PAL">Palmeiras</option>
+            <option value="SAN">Santos</option>
+        </optgroup>
+        <mark class="verde"><optgroup label="Times cariocas"></mark>
+            <option value="FLA">Flamengo</option>
+            <option value="FLU">Fluminense</option>
+            <option value="VAS">Vasco</option>
+        </optgroup>
+        <optgroup label="Times nordestinos">
+            <option value="FOR">Fortaleza</option>
+            <option value="SPOR">Sport</option>
+            <option value="BAH">Bahia</option>
+        </optgroup>
+    </select>
+        </fieldset>
+
+        <fieldset>
+            <label for="csalgados">Salgados: </label>
+            <input type="text" name="salgado" id="csalgados" list="lista-de-salgados">
+            <datalist id="lista-de-salgados">
+                <optgroup label="Padaria">
+                    <option value="Pastel">Pastel</option>
+                    <option value="Pão-pizza">Pão-pizza</option>
+                    <option value="Empadona">Empadona</option>
+                </optgroup>
+                <optgroup label="Festa">
+                    <option value="Rabo-de-tatu">Rabo-de-tatu</option>
+                    <option value="Coxinha">Coxinha</option>
+                    <option value="Cachorro-quente">Cachorro-quente</option>
+                </optgroup>
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <textarea name="area" id="area" cols="50" rows="10" maxlength="500" placeholder="Digite aqui!"></textarea>
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
