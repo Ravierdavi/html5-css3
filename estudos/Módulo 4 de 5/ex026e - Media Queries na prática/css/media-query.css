@@ -1,0 +1,124 @@
+@chaset "UTF-8";
+
+/* Impressão */
+@media print {
+    h1, h2 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        border: 3px solid black;
+    }
+    
+    span {
+        display: none;
+    }
+
+    h2:after {
+        content: "Versão para impressoras"
+    }
+
+    img#phone { display: none; }
+    img#pc { display: none; }
+    img#print { display: inline-block; }
+    img#tablet { display: none; }
+    img#tv { display: none; }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+    body {
+        background-image: url(../imgs/back-tablet.jpg);
+    }
+
+    span {
+        display: none;
+    }
+
+    h2:after {
+        text-shadow: 1px 1px 3px rgb(0, 119, 255);
+        content: "Versão para celulares e tablets";
+    }
+
+    img#phone { display: inline-block; }
+    img#pc { display: none; }
+    img#print { display: none; }
+    img#tablet { display: inline-block; }
+    img#tv { display: none; }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    span {
+        display: none;
+    }
+
+    h2:after {
+        text-shadow: 1px 1px 3px blue;
+        content: "Versão para tablets"
+    }
+    
+    img#phone { display: none; }
+    img#pc { display: none; }
+    img#print { display: none; }
+    img#tablet { display: inline-block; }
+    img#tv { display: none; }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url(../imgs/back-pc.jpg);
+        background-size: auto;
+    }
+
+    h2:after {
+        color: #1b1b1b;
+        text-shadow: 1px 1px 1px rgb(31, 185, 0);
+        content: "Versão para pcs"
+    }
+
+    img#phone { display: none; }
+    img#pc { display: inline-block; }
+    img#print { display: none; }
+    img#tablet { display: none; }
+    img#tv { display: none; }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imgs/back-pc.jpg);
+        background-size: cover;
+    }
+
+    h2:after {
+        text-shadow: 1px 1px 3px rgb(153, 0, 255);
+        content: "Versão para pcs e tvs"
+    }
+    
+    img#phone { display: none; }
+    img#pc { display: inline-block; }
+    img#print { display: none; }
+    img#tablet { display: none; }
+    img#tv { display: inline-block; }
+}
+
+@media screen and (min-width: 1980px) {
+    body {
+        background-image: url(../imgs/back-tv.jpg);
+        background-size: cover;
+    }
+
+    h2:after {
+        text-shadow: 1px 1px 3px rgb(153, 0, 255);
+        content: "Versão para tvs"
+    }
+    
+    img#phone { display: none; }
+    img#pc { display: none; }
+    img#print { display: none; }
+    img#tablet { display: none; }
+    img#tv { display: inline-block; }
+}

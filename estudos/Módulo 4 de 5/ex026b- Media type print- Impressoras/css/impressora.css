@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* Estilo para as impressoras */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+}
+
+menu {
+    display: none;
+}
+
+footer > p {
+    display: none;
+}
+
+footer::after {
+    content: "ieuuee";
+} 

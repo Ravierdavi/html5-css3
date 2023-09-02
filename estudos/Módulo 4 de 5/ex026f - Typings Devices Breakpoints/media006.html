@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakpoints CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    code {
+      font-family: Consolas, monospace;
+      background-color: #f5f5f5;
+      padding: 5px;
+      border-radius: 3px;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    .breakpoint {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .description {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Breakpoints CSS</h1>
+  
+  <ul>
+    <li>
+      <span class="breakpoint">Dispositivos móveis pequenos:</span>
+      <span class="description">(max-width: 320px)</span>
+    </li>
+    <li>
+      <span class="breakpoint">Dispositivos móveis:</span>
+      <span class="description">(min-width: 321px) and (max-width: 480px)</span>
+    </li>
+    <li>
+      <span class="breakpoint">Tablets em modo retrato:</span>
+      <span class="description">(min-width: 481px) and (max-width: 768px)</span>
+    </li>
+    <li>
+      <span class="breakpoint">Tablets em modo paisagem:</span>
+      <span class="description">(min-width: 769px) and (max-width: 1024px)</span>
+    </li>
+    <li>
+      <span class="breakpoint">Laptops e desktops pequenos:</span>
+      <span class="description">(min-width: 1025px) and (max-width: 1366px)</span>
+    </li>
+    <li>
+      <span class="breakpoint">Laptops e desktops médios:</span>
+      <span class="description">(min-width: 1367px) and (max-width: 1680px)</span>
+    </li>
+    <li>
+      <span class="breakpoint">Laptops e desktops grandes:</span>
+      <span class="description">(min-width: 1681px) and (max-width: 1920px)</span>
+    </li>
+    <li>
+      <span class="breakpoint">Laptops e desktops extra grandes:</span>
+      <span class="description">(min-width: 1921px)</span>
+    </li>
+  </ul>
+</body>
+</html>

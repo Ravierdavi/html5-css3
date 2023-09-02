@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* Configurações para tablets pcs e tvs */
+main > article > p {
+    text-indent: 30px;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+/* Menu */
+i#menu {
+    display: none;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    margin: 5px;
+}
