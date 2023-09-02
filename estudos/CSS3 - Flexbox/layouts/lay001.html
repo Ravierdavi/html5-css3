@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout001</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 100%;
+            min-height: 100vh;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        nav {
+            background-color: #202020;
+            height: 10vh;
+        }
+
+        header {
+            background-color: #18bac0;
+            height: 15vh;
+        }
+
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        article, aside {
+            flex: 3 1 0;
+            height: 80vh
+        }
+
+        main > article {
+            background-color: #6f18c0;
+        }
+
+        main > aside {
+            background-color: #e9981e;
+            flex: 1.5 1 0;
+        }
+
+        main > aside:last-child {
+            background-color: #ffbc57;
+        }
+
+        footer {
+            background-color: #18bac0;
+            height: 10vh;
+        }
+
+        /* Configurações adicionais */
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5vw;
+        }
+
+        .container-a {
+            width: 30%;
+            height: 80%;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        .container-a > a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container-a">
+            <a href="#">Home</a><a href="#">Help</a><a href="#">Products</a><a href="#">Cookie</a>
+        </div>
+    </nav>
+
+    <header><div class="container">
+        <p class="flex-item">Cabeçalho</p>
+    </div></header>
+
+    <main>
+        <article><div class="container">
+            <p class="flex-item">Conteúdo Principal</p>
+        </div></article>
+        <aside><div class="container">
+            <p class="flex-item">Conteúdo Periférico</p>
+        </div></aside>
+        <aside><div class="container">
+            <p class="flex-item">Conteúdo Periférico</p>
+        </div></aside>
+    </main>
+
+    <footer><div class="container">
+        <p class="flex-item">Rodapé</p>
+    </div></footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntando tudo em um único css</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Reunindo tudo em um único CSS</h1>
+
+    <h3>- Pode ser feito usando a tag <mark>&lt;style></mark>, dentro de <mark>&lt;head></mark>, usando
+        <mark>@media</mark> para especificar o tipo de mídia e 'and' para unir os 'media features';</h3>
+    <h3>- Além disso pode ser feito também usando o <mark>'link:css'</mark> para criar um arquivo de estilo separado.
+    </h3>
+
+    <h3><u>Ex:</u></h3>
+    <pre>
+        @charset "UTF-8";
+        /* declarações gerais */
+        
+        @media all {
+            h1 {
+                        color: white;
+                        text-shadow: 2px 2px 0px #1526a7;
+                        padding: 10px;
+            }
+        }
+        /* declarações retrato */
+        @media screen and (orientation: portrait) {
+            body {
+                            background-image: url(../imagens/cev-portrait.jpg);
+                            background-position: center bottom;
+                    }
+        }
+        /* declarações paisagem */
+        @media screen and (orientation: landscape) {
+                    body {
+                            background-image: url(../imagens/cev-landscape.jpg);
+                            background-position: left bottom;
+                    }
+        }
+    </pre>
+
+    <h3>*Obs: Atalho para identar o código dentro do VS Code: Shift + Alt + F</h3>
+</body>
+
+</html>

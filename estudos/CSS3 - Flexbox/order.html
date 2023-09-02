@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: monospace;
+        }
+
+        h1 {
+            margin-top: 30px;
+            color: rgb(128, 52, 172);
+            font-size: 4em;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: center;
+            border: 2px solid tomato;
+            margin: 40px auto 0 auto;
+            max-width: 1000px;
+            height: 500px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            flex-basis: 0;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+        }
+
+        .item > .text {
+            font-size: 3em;
+            font-weight: bold;
+            color: white;
+        }
+
+        .order2 {
+            order: 2;
+        }
+
+        .order4 {
+            order: 4;
+        }
+
+        .order-93{
+            order: -93;
+        }
+
+        .order-94 {
+            order: -94;
+        }
+    </style>
+</head>
+<body>
+    <h1>Css3 - Order</h1>
+    <section class="container">
+        <div class="item order4"><p class="text">1</p></div>
+        <div class="item order-94"><p class="text">2</p></div>
+        <div class="item order2"><p class="text">3</p></div>
+        <div class="item"><p class="text">4</p></div>
+        <div class="item order-93"><p class="text">5</p></div>
+    </section>
+    
+</body>
+</html>
