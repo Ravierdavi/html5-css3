@@ -1,0 +1,29 @@
+Aqui está uma lista mais abrangente com alguns dos breakpoints comumente utilizados para design responsivo:
+
+---------------------------------------------------------------------------------------------------------------
+- Dispositivos móveis pequenos:
+  - Até 320px de largura (exemplo: iPhone SE)
+
+- Dispositivos móveis:
+  - De 321px a 480px de largura (exemplo: smartphones Android)
+
+- Tablets em modo retrato:
+  - De 481px a 768px de largura (exemplo: iPads em modo retrato)
+
+- Tablets em modo paisagem:
+  - De 769px a 1024px de largura (exemplo: iPads em modo paisagem)
+
+- Laptops e desktops pequenos:
+  - De 1025px a 1366px de largura (exemplo: laptops com telas menores)
+
+- Laptops e desktops médios:
+  - De 1367px a 1680px de largura (exemplo: laptops e monitores de tamanho intermediário)
+
+- Laptops e desktops grandes:
+  - De 1681px a 1920px de largura (exemplo: monitores widescreen)
+
+- Laptops e desktops extra grandes:
+  - Acima de 1920px de largura (exemplo: monitores ultrawide)
+---------------------------------------------------------------------------------------------------------------
+
+É importante observar que esses breakpoints são apenas diretrizes gerais e podem variar dependendo das necessidades específicas do seu projeto e do público-alvo. Além disso, é recomendado testar e ajustar os breakpoints em diferentes dispositivos e tamanhos de tela para garantir uma experiência consistente e agradável para os usuários.

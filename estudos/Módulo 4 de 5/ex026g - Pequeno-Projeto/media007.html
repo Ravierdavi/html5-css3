@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pequeno Projeto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/media-query.css" media="screen and (min-width: 768px)">
+</head>
+<body onresize="tamanhoTela()">
+    <header>
+        <h1>Meu site</h1>
+        <i id="menu" class="material-symbols-outlined" onclick="clickMenu()">Menu</i>
+        <nav id="nav">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Opção 6</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Notícia</h1>
+        <article>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima a fuga accusamus quas cum esse consectetur odit aliquid recusandae dignissimos non veritatis error optio, dolorem, dolor et provident tempore fugit.
+            Ratione sapiente tempore consectetur unde et labore veritatis sint! Praesentium laudantium sit ab esse expedita reiciendis quaerat in voluptatem accusantium voluptas, ipsa non consequuntur fugiat, quibusdam commodi dolore! Excepturi, natus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti facere necessitatibus fuga enim quasi maxime voluptate ab magnam sequi impedit ipsa amet iste beatae, culpa consectetur quisquam, doloremque officiis soluta!
+            Ut corporis, minus necessitatibus earum dolorem veniam molestias! Corrupti nesciunt fugiat quo alias quibusdam quas, nostrum quae Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptatibus autem assumenda dolorem aspernatur eaque dicta, necessitatibus fuga, eius veniam sequi ad ab quibusdam corporis corrupti quod ipsam. Suscipit, voluptate. possimus, et iure error quis minus dolorem sunt quasi recusandae, enim id ea.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti facere necessitatibus fuga enim quasi maxime voluptate ab magnam sequi impedit ipsa amet iste beatae, culpa consectetur quisquam, doloremque officiis soluta!
+            Ut corporis, minus necessitatibus earum dolorem veniam molestias! Corrupti nesciunt fugiat quo alias quibusdam quas, nostrum quae possimus, et iure error quis minus dolorem sunt quasi recusandae, enim id ea.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti facere necessitatibus fuga enim quasi maxime voluptate ab magnam sequi impedit ipsa amet iste beatae, culpa consectetur quisquam, doloremque officiis soluta!
+            Ut corporis, minus necessitatibus earum dolorem veniam molestias! Corrupti nesciunt fugiat quo alias quibusdam quas, nostrum quae possimus, et iure error quis minus dolorem sunt quasi recusandae, enim id ea.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti facere necessitatibus fuga enim quasi maxime voluptate ab magnam sequi impedit ipsa amet iste beatae, culpa consectetur quisquam, doloremque officiis soluta!
+            Ut corporis, minus necessitatibus earum dolorem veniam molestias! Corrupti nesciunt fugiat quo alias quibusdam quas, nostrum quae possimus, et iure error quis minus dolorem sunt quasi recusandae, enim id ea.</p>
+        </article>
+    </main>
+    
+    <footer>
+        <p>Site criado por Ravier Davi &copy;RT</p>
+    </footer>
+
+    <script>
+        nav.style.display = "none"
+
+        function tamanhoTela() {
+            if (window.innerWidth >= 768) {
+                nav.style.display = 'block'
+            } else {
+                nav.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (nav.style.display == 'none') {
+                nav.style.display = 'block'
+            } else {
+                nav.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
