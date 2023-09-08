@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* Configurações Gerais */
+aside#information {
+    font-size: 0.9em;
+}
+
+@media (max-width: 560px) {
+    aside#information > p:nth-child(3){
+        display: none;
+    }
+
+    main > article > section > div{
+        flex: 2;
+        font-size: 1.095em;
+    }
+
+    main > article > section > img {
+        flex: 1;
+    }
+
+    main > article > section > img:nth-child(3) {
+        display: none;
+    }
+
+    section#benefits {
+        padding: 0;
+    }
+
+    section#benefits > section {
+        flex: 1 1 200px;
+        padding: 10px;
+    }
+
+    section#products > section > div > h3 {
+        font-size: 1.6em;
+    }
+
+    section#benefits > section {
+        flex: 1 1 0;
+    }
+}
+
+/* fix problem */
+@media (max-width: 596px) {
+    aside#plans > figure#middle {
+        margin: 0 0 0 20px;
+    } 
+}
+
+@media (max-width: 538px) {
+    aside#sign > section {
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+
+    aside#sign > form {
+        flex: 1 1 320px;
+    }
+}
+
+@media (max-width: 410px) {
+    aside#information > p {
+        font-size: 0.8em;
+    }
+
+    header > nav > ul > li > a {
+        font-size: 1.05em;
+    }
+
+    main > h1 {
+        font-size: 2.4em;
+    }
+
+    main > article > h2, section#products > h2 {
+        font-size: 2.2em;
+    }
+    
+    aside#plans > figure#middle {
+        margin: 10px 0 0 0;
+    } 
+
+    main > article > section > div{
+        font-size: 1.08em;
+    }
+
+    aside#sign > form > input[type=submit] {
+        font-size: 1.3em;
+    }
+}
