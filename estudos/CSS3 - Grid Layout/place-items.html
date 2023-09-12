@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place-items</title>
+    <style>
+        /* Configurações Gerais */
+        @charset "UTF-8";
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: grid;
+            justify-content: center;
+        }
+
+        /* Configuração Principal */
+        section.container {
+            place-items: end center;
+        }
+
+        /* Container */
+        section.container {
+            width: 900px;
+            height: 500px;
+            display: grid;
+            grid: repeat(3, 1fr) / auto-flow 1fr;
+            gap: 10px;
+            padding: 10px;
+            border: 10px solid tomato;
+        }
+
+        /* Child */
+        div.child {
+            background-color: tomato;
+        }
+
+        /* Outras Configurações */
+        h1 {
+            font: 600 3em Arial;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Place-items</h1>
+    <section class="container">
+        <div class="child logo">test</div>
+        <div class="child nav">jd</div>
+        <div class="child nav">idi</div>
+        <div class="child sidenav">jdhd</div>
+        <div class="child content">j</div>
+        <div class="child advert">falamano</div>
+        <div class="child sidenav">elmior</div>
+        <div class="child footer">tá</div>
+        <div class="child footer">heibro</div>
+    </section>
+</body>
+</html>

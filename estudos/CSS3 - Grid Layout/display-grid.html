@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+    <style>
+        /* Configurações Gerais */
+        @charset "UTF-8";
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: grid;
+            justify-items: center;
+        }
+
+        /* Configuração Principal */
+        section.container {
+            display: grid;
+        }
+
+        /* Container */
+        section.container {
+            width: 900px;
+            height: 500px;
+            gap: 10px;
+            padding: 10px;
+            border: 10px solid tomato;
+        }
+
+        /* Child */
+        div.child {
+            width: 100px;
+            height: 100%;
+            background-color: tomato;
+        }
+
+        /* Outras Configurações */
+        h1 {
+            font: 600 3em Arial;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Display Grid</h1>
+    <section class="container">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </section>
+</body>
+</html>
