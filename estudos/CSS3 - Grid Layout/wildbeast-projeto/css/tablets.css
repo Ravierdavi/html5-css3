@@ -1,0 +1,108 @@
+/* Tablets em modo retrato */
+@media screen and (min-width: 600px) {
+    /* Cabeçalho */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+    }
+    
+    header > img {
+        max-width: 250px;
+        width: 40%;
+        min-width: 220px;
+    }
+    
+    header > nav {
+        width: 270px;
+    }
+    
+    header > nav > ul {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, auto);
+        list-style-type: none;
+    }
+    
+    header > nav > ul > li > a {
+        padding: 8px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        font-size: 1.05em;
+        font-size: clamp(1em, 0.3em + 3vw, 1.15em);
+        text-decoration: none;
+        color: white;
+    }
+    
+    header > nav > ul > li > a:hover {
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.445);
+    }
+
+    /* Conteúdo Principal */
+    article {
+        display: grid;
+        grid-template: repeat(2, auto) 100px  repeat(5, auto) / 1fr 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    article > section#title > p {
+        font-size: 0.95em;
+    }
+
+    article > p#introduction {
+        grid-column: span 2;
+    }
+
+    article > p#destaque {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    article > blockquote {
+        grid-column: span 2;
+    }
+
+    article > p {
+        font-size: 1.15em;
+    }
+
+    article p.p {
+        grid-row: 5 / 6;
+    }
+
+    article > img#lobo2 {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+
+    article > img#lobo3 {
+        grid-column: span 2;
+    }
+}
+
+/* Tablets em modo paisagem */
+@media screen and (min-width: 768px) {
+    /* Estrutura */
+    main#estrutura {
+        display: grid;
+        grid-template-areas: 
+        "Cabeçalho Cabeçalho"
+        "Icones Conteudo"
+        "Icones Anuncios"
+        "Rodape Rodape";
+        grid-template-rows: max-content;
+    }
+
+    /* Barra de navegação */
+    section#icons {
+        padding: 30px;
+        overflow-x: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#icons > img {
+        margin: 0 0 30px 0;
+    }
+}
