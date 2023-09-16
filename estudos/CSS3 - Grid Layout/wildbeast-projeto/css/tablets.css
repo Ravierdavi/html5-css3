@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Tablets em modo retrato */
 @media screen and (min-width: 600px) {
     /* Cabeçalho */
@@ -40,44 +42,90 @@
         background-color: rgba(0, 0, 0, 0.445);
     }
 
+    section#icons {
+        grid-area: Icones;
+        padding-left: 20px;
+        overflow-x: auto;
+        display: flex;
+    }
+
+    /* Barra de navegação */
+    section#icons {
+        overflow-x: hidden;
+    }
+
     /* Conteúdo Principal */
     article {
         display: grid;
-        grid-template: repeat(2, auto) 100px  repeat(5, auto) / 1fr 1fr;
+        grid-template-areas: 
+        "title caracteristicas"
+        "introducao introducao"
+        "lobo1 destaque"
+        "lobo1 lobo2"
+        "p1 p2"
+        "citacao citacao"
+        "lista sect-p"
+        "lobo3 lobo3";
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
         padding: 30px;
+    }
+
+    article > section#title {
+        grid-area: title;
     }
 
     article > section#title > p {
         font-size: 0.95em;
     }
 
+    article > section#caracteristicas {
+        grid-area: caracteristicas;
+    }
+
     article > p#introduction {
-        grid-column: span 2;
+        grid-area: introducao;
     }
 
     article > p#destaque {
-        grid-area: 3 / 2 / 4 / 3;
+        grid-area: destaque;
     }
 
     article > blockquote {
-        grid-column: span 2;
+        grid-area: citacao;
     }
 
     article > p {
         font-size: 1.15em;
     }
 
-    article p.p {
-        grid-row: 5 / 6;
+    article p.p1 {
+        grid-area: p1;
+    }
+
+    article p.p2 {
+        grid-area: p2;
+    }
+
+    article > img {
+        align-self: end;
+    }
+
+    article > img#lobo1 {
+        grid-area: lobo1;
     }
 
     article > img#lobo2 {
-        grid-area: 4 / 2 / 5 / 3;
+        grid-area: lobo2;
     }
 
     article > img#lobo3 {
-        grid-column: span 2;
+        grid-area: lobo3;
+    }
+
+    /* Rodapé */
+    footer {
+        font-size: 1.1em;
     }
 }
 
@@ -91,7 +139,6 @@
         "Icones Conteudo"
         "Icones Anuncios"
         "Rodape Rodape";
-        grid-template-rows: max-content;
     }
 
     /* Barra de navegação */
@@ -104,5 +151,10 @@
 
     section#icons > img {
         margin: 0 0 30px 0;
+    }
+
+    /* Rodapé */
+    footer {
+        font-size: 1.2em;
     }
 }
