@@ -144,7 +144,7 @@
     /* Barra de navegação */
     section#icons {
         padding: 30px;
-        overflow-x: none;
+        overflow-x: hidden;
         display: flex;
         flex-direction: column;
     }
