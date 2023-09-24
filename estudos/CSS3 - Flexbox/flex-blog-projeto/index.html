@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,133 +9,142 @@
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
     <title>FlexBlog</title>
 </head>
+
 <body>
-    <aside id="information">
+<aside class="superinfo-bg">
+    <div class="superinfo">
         <p>Seg / Sex - 08:00 às 18:00</p>
-        <p>+55 21 9999-9999</p>
+        <a href="tel:+552199999999">+55 21 9999-9999</a>
         <p>Avi. Ali Perto, 330, Botafogo - RJ</p>
-    </aside>
-    <header>
-        <div class="logo">FlexBlog</div>
+    </div>
+</aside>
+
+<header class="menu-bg">
+    <div class="menu">
+        <div class="logo"><a href="#">FlexBlog</a></div>
         <nav>
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Preço</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#plans">Preço</a></li>
+                <li><a href="#benefits">Contato</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <h1>
-            Novos valores e <br>
-            ropriedades de css.
-        </h1>
-        <article>
-            <h2>Sobre</h2>
-            <section>
-                <div>
-                    <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
-                    <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
-                </div>
-                <img src="imgs/sobre1.jpg" alt="flex-item-1">
-                <img src="imgs/sobre2.jpg" alt="flex-item-2">
-            </section>
-        </article>
-        <section id="products">
-            <h2>Produtos</h2>
-            <section>
-                <div id="purple-product">
-                    <h3>Purple</h3>
-                    <img src="imgs/produtos1.jpg" alt="purple-img">
-                </div>
-                <div id="pink-product" style="--border-color: rgb(255, 0, 76);">
-                    <h3>Pink</h3>
-                    <img src="imgs/produtos2.jpg" alt="pink-img">
-                </div>
-                <div id="blue-product" style="--border-color: rgb(0, 174, 255);">
-                    <h3>Blue</h3>
-                    <img src="imgs/produtos3.jpg" alt="blue-img">
-                </div>
-            </section>
+    </div>
+</header>
+
+<main>
+    <h1>
+        Novos valores e <br>
+        ropriedades de css.
+    </h1>
+    <article class="sobre" id="sobre">
+        <h2>Sobre</h2>
+        <section class="sobre-info">
+            <div>
+                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
+                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
+            </div>
+            <img src="imgs/sobre1.jpg" alt="flex-item-1">
+            <img src="imgs/sobre2.jpg" alt="flex-item-2">
         </section>
-        <aside id="plans">
-            <figure>
-                <h3>Cobre</h3>
-                <p><strong><sup>R$</sup>19</strong></p>
-                <section>
-                    <div><p>Planos Ilimitados</p> <div class="bullet"></div></div>
-                    <div><p>Acesso Restrito</p> <div class="bullet"></div></div>
-                    <div><p>Conteúdo Secreto</p> <div class="bullet"></div></div>
-                    <div><p>Suporte 24h</p> <div class="bullet"></div></div>
-                </section>
-                <a href="#">COMPRAR</a>
-            </figure>
-            <figure id="middle">
-                <h3>Prata</h3>
-                <p><strong><sup>R$</sup>39</strong></p>
-                <section>
-                    <div><p>Planos Ilimitados</p> <div class="bullet"></div></div>
-                    <div><p>Acesso Restrito</p> <div class="bullet"></div></div>
-                    <div><p>Conteúdo Secreto</p> <div class="bullet"></div></div>
-                    <div><p>Suporte 24h</p> <div class="bullet"></div></div>
-                    <div><p>Compra Exclusiva</p> <div class="bullet"></div></div>
-                </section>
-                <a href="#">COMPRAR</a>
-            </figure>
-            <figure>
-                <h3>Ouro</h3>
-                <p><strong><sup>R$</sup>79</strong></p>
-                <section>
-                    <div><p>Planos Ilimitados</p> <div class="bullet"></div></div>
-                    <div><p>Acesso Restrito</p> <div class="bullet"></div></div>
-                    <div><p>Conteúdo Secreto</p> <div class="bullet"></div></div>
-                    <div><p>Suporte 24h</p> <div class="bullet"></div></div>
-                    <div><p>Compra Exclusiva</p> <div class="bullet"></div></div>
-                    <div><p>Download dos Itens</p> <div class="bullet"></div></div>
-                </section>
-                <a href="#">COMPRAR</a>
-            </figure>
-        </aside>
-        <section id="benefits">
-            <section>
-                <h3>Inteligente</h3>
-                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
-            </section>
-            <section>
-                <h3 style="--border-left-color: tomato;">Compacto</h3>
-                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
-            </section>
-            <section>
-                <h3 style="--border-left-color: rgb(90, 189, 255);">Econômico</h3>
-                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
-            </section>
-            <section>
-                <h3>Tranparente</h3>
-                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
-            </section>
-            <section>
-                <h3 style="--border-left-color: tomato;">Opaco</h3>
-                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
-            </section>
-            <section>
-                <h3 style="--border-left-color: rgb(90, 189, 255);">Sustentável</h3>
-                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
-            </section>
+    </article>
+    <section class="products">
+        <h2>Produtos</h2>
+        <section class="products-info">
+            <div class="purple-product products-section">
+                <h3>Purple</h3>
+                <img src="imgs/produtos1.jpg" alt="purple-img">
+            </div>
+            <div class="pink-product products-section">
+                <h3>Pink</h3>
+                <img src="imgs/produtos2.jpg" alt="pink-img">
+            </div>
+            <div class="blue-product products-section">
+                <h3>Blue</h3>
+                <img src="imgs/produtos3.jpg" alt="blue-img">
+            </div>
         </section>
-        <aside id="sign">
-            <section>
-                <h3>Newsetter</h3>
-                <p>assine e fique por dentro das novidades.</p>
-            </section>
-            <form action="script.js" method="post">
-                <input type="email" name="email" id="idemail" placeholder="Seu e-mail" maxlength="60" minlength="5" required>
-                <input type="submit" value="Assinar">
-            </form action="">
-        </aside>
-    </main>
-    <footer>
-        <p>FlexBlog &copy; Todos os direitos reservados.</p>
-    </footer>
+    </section>
+    <aside class="plans">
+        <figure class="cobre plan">
+            <h3>Cobre</h3>
+            <h4><sup>R$</sup>19</h4>
+            <ul class="plan-info">
+                <li>Planos Ilimitados</li>
+                <li>Acesso Restrito</li>
+                <li>Conteúdo Secreto</li>
+                <li>Suporte 24h</li>
+            </ul>
+            <a href="#">COMPRAR</a>
+        </figure>
+        <figure class="prata plan">
+            <h3>Prata</h3>
+            <h4><sup>R$</sup>39</h4>
+            <ul class="plan-info">
+                <li>Planos Ilimitados</li>
+                <li>Acesso Restrito</li>
+                <li>Conteúdo Secreto</li>
+                <li>Suporte 24h</li>
+                <li>Compra Exclusiva</li>
+            </ul>
+            <a href="#">COMPRAR</a>
+        </figure>
+        <figure class="ouro plan">
+            <h3>Ouro</h3>
+            <h4><sup>R$</sup>79</h4>
+            <ul class="plan-info">
+                <li>Planos Ilimitados</li>
+                <li>Acesso Restrito</li>
+                <li>Conteúdo Secreto</li>
+                <li>Suporte 24h</li>
+                <li>Compra Exclusiva</li>
+                <li>Download dos Itens</li>
+            </ul>
+            <a href="#">COMPRAR</a>
+        </figure>
+    </aside>
+    <section class="benefits">
+        <section class="benefits-item">
+            <h3>Inteligente</h3>
+            <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
+        </section>
+        <section class="benefits-item">
+            <h3>Compacto</h3>
+            <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
+        </section>
+        <section class="benefits-item">
+            <h3>Econômico</h3>
+            <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
+        </section>
+        <section class="benefits-item">
+            <h3>Tranparente</h3>
+            <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
+        </section>
+        <section class="benefits-item">
+            <h3>Opaco</h3>
+            <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
+        </section>
+        <section class="benefits-item">
+            <h3>Sustentável</h3>
+            <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
+        </section>
+    </section>
+    <aside class="newsetter">
+        <section class="newsetter-info">
+            <h3>Newsetter</h3>
+            <p>assine e fique por dentro das novidades.</p>
+        </section>
+        <form class="newsetter-form" action="script.js" method="post">
+            <input type="email" name="email" id="idemail" placeholder="Seu e-mail" maxlength="60" minlength="5" required>
+            <input type="submit" value="Assinar">
+        </form>
+    </aside>
+</main>
+
+<footer>
+    <p>FlexBlog &copy; Todos os direitos reservados.</p>
+</footer>
 </body>
+
 </html>
