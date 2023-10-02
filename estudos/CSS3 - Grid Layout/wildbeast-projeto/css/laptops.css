@@ -1,76 +1,76 @@
 @charset "UTF-8";
 
 /* Estrutura */
-main#estrutura {
+.estrutura {
     display: grid;
-    grid-template-areas: 
-    "Cabeçalho Cabeçalho Cabeçalho Cabeçalho Cabeçalho"
-    ". Icones Conteudo Anuncios ."
-    "Rodape Rodape Rodape Rodape Rodape";
-    grid-template-columns: 1fr minmax(200px, 300px) minmax(700px, 1200px) 300px 1fr;
+    grid: 
+    "header header header header header"
+    ". sidenav content ads ."
+    "footer footer footer footer footer"
+    / 1fr auto minmax(auto, 1200px) 300px 1fr;
     justify-content: center;
 }
 
-/* Anúncios */
-aside {
-    align-content: start;
-    grid-template-columns: 1fr;
-}
-
-/* Barra de navegação */
-section#icons {
-    display: grid;
-    place-content: start center;
-}
-
-section#icons > img {
-    width: 150px;
-    margin: 0 0 30px 0;
-    padding: 30px;
-}
-
-/* Ajustes de tamanho */
-article {
-    padding: 30px 15px;
-}
-
-header > nav {
+/* Cabeçalho */
+.header nav {
     max-width: 310px;
     width: 100%;
 }
 
-header > nav > ul > li > a {
+.header nav a {
     padding: 10px;
     font-size: 1.2em;
 }
 
-article > section#title > h1 {
+/* Barra de navegação */
+.sidenav {
+    display: grid;
+    place-content: start center;
+}
+
+.sidenav img {
+    max-width: 150px;
+    width: 10vw;
+    margin: 0 0 30px 0;
+    padding: 30px;
+}
+
+/* Conteúdo Principal */
+.content {
+    padding: 30px 15px;
+}
+
+.content > p, .information p {
+    font-size: 1.2em;
+}
+
+.title h1 {
     font-size: 3.9em;
 }
 
-article > section#title > p {
-    font-size: 1em;
-}
-
-article > p#destaque {
-    height: 140px;
+.title p {
     font-size: 1.05em;
 }
 
-article > blockquote > p {
+.content .emphasis {
+    font-size: 1.05em;
+}
+
+.quote p {
     font-size: 1.3em;
 }
 
-article > ul > li {
+.attributes li {
     font-size: 1.2em;
 }
 
-article p {
-    font-size: 1.2em;
-    line-height: 1.7em;
-    color: #555
+/* Anúncios */
+.ads {
+    align-content: start;
+    grid-template-columns: 1fr;
 }
 
-footer {
+/* Rodapé */
+.footer {
     font-size: 1.3em;
 }

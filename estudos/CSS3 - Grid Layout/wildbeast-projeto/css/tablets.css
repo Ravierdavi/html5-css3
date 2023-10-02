@@ -3,128 +3,96 @@
 /* Tablets em modo retrato */
 @media screen and (min-width: 600px) {
     /* Cabeçalho */
-    header {
+    .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 30px;
     }
     
-    header > img {
-        max-width: 250px;
+    .header .logo {
         width: 40%;
-        min-width: 220px;
     }
     
-    header > nav {
+    .header nav {
         width: 270px;
-    }
-    
-    header > nav > ul {
-        display: grid;
-        justify-content: space-between;
-        grid-template-columns: repeat(3, auto);
-        list-style-type: none;
-    }
-    
-    header > nav > ul > li > a {
-        padding: 8px;
-        background-color: rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        font-size: 1.05em;
-        font-size: clamp(1em, 0.3em + 3vw, 1.15em);
-        text-decoration: none;
-        color: white;
-    }
-    
-    header > nav > ul > li > a:hover {
-        outline: none;
-        background-color: rgba(0, 0, 0, 0.445);
-    }
-
-    section#icons {
-        grid-area: Icones;
-        padding-left: 20px;
-        overflow-x: auto;
-        display: flex;
-    }
-
-    /* Barra de navegação */
-    section#icons {
-        overflow-x: hidden;
     }
 
     /* Conteúdo Principal */
-    article {
+    .content {
         display: grid;
-        grid-template-areas: 
-        "title caracteristicas"
-        "introducao introducao"
-        "lobo1 destaque"
-        "lobo1 lobo2"
+        grid: 
+        "title characteristics"
+        "introduction introduction"
+        "wolf-1 emphasis"
+        "wolf-1 wolf-2"
         "p1 p2"
-        "citacao citacao"
-        "lista sect-p"
-        "lobo3 lobo3";
-        grid-template-columns: 1fr 1fr;
+        "quote quote"
+        "attributes information"
+        "wolf-3 wolf-3"
+        / 1fr 1fr;
         gap: 30px;
         padding: 30px;
     }
 
-    article > section#title {
-        grid-area: title;
-    }
-
-    article > section#title > p {
-        font-size: 0.95em;
-    }
-
-    article > section#caracteristicas {
-        grid-area: caracteristicas;
-    }
-
-    article > p#introduction {
-        grid-area: introducao;
-    }
-
-    article > p#destaque {
-        grid-area: destaque;
-    }
-
-    article > blockquote {
-        grid-area: citacao;
-    }
-
-    article > p {
+    .content > p, .information p {
         font-size: 1.15em;
     }
 
-    article p.p1 {
+    .title {
+        grid-area: title;
+    }
+
+    .title p {
+        font-size: 0.95em;
+    }
+
+    .characteristics {
+        grid-area: characteristics;
+    }
+
+    .introduction {
+        grid-area: introduction;
+    }
+
+    .emphasis {
+        grid-area: emphasis;
+    }
+
+    .quote {
+        grid-area: quote;
+    }
+
+    .p1 {
         grid-area: p1;
     }
 
-    article p.p2 {
+    .p2 {
         grid-area: p2;
     }
 
-    article > img {
-        align-self: end;
+    .attributes {
+        grid-area: attributes;
     }
 
-    article > img#lobo1 {
-        grid-area: lobo1;
+    .information {
+        grid-area: information;
     }
 
-    article > img#lobo2 {
-        grid-area: lobo2;
+    .wolf-1 {
+        grid-area: wolf-1;
     }
 
-    article > img#lobo3 {
-        grid-area: lobo3;
+    .wolf-2 {
+        grid-area: wolf-2;
+    }
+
+    .wolf-3 {
+        grid-area: wolf-3;
     }
 
     /* Rodapé */
-    footer {
+    .footer {
         font-size: 1.1em;
     }
 }
@@ -132,29 +100,33 @@
 /* Tablets em modo paisagem */
 @media screen and (min-width: 768px) {
     /* Estrutura */
-    main#estrutura {
+    .estrutura {
         display: grid;
-        grid-template-areas: 
-        "Cabeçalho Cabeçalho"
-        "Icones Conteudo"
-        "Icones Anuncios"
-        "Rodape Rodape";
+        grid-template-areas:
+        "header header"
+        "sidenav content"
+        "sidenav ads"
+        "footer footer";
     }
 
     /* Barra de navegação */
-    section#icons {
+    .sidenav {
         padding: 30px;
         overflow-x: hidden;
         display: flex;
         flex-direction: column;
     }
 
-    section#icons > img {
+    .sidenav::before {
+        content: "";
+    }
+
+    .sidenav img {
         margin: 0 0 30px 0;
     }
 
     /* Rodapé */
-    footer {
+    .footer {
         font-size: 1.2em;
     }
 }

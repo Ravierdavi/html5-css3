@@ -10,19 +10,22 @@
     <title>Wildbeast</title>
 </head>
 <body>
-    <main id="estrutura">
-        <header>
-            <img src="imgs/wildbeast.svg" alt="logo-wildbeast">
+    <main class="estrutura">
+
+        <!-- Cabeçalho -->
+        <header class="header">
+            <img src="imgs/wildbeast.svg" alt="logo-wildbeast" class="logo">
             <nav>
                 <ul>
-                    <li><a href="#">sobre</a></li>
-                    <li><a href="#">animais</a></li>
-                    <li><a href="#">contato</a></li>
+                    <li><a href="#sobre">sobre</a></li>
+                    <li><a href="#sidenav">animais</a></li>
+                    <li><a href="#footer">contato</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section id="icons">
+        <!-- Navegação Lateral -->
+        <section class="sidenav" id="sidenav">
             <img src="icons/cervo.svg" alt="Ícone cervo">
             <img src="icons/leao.svg" alt="Ícone leão">
             <img src="icons/gato.svg" alt="Ícone gato">
@@ -31,39 +34,49 @@
             <img src="icons/abelha.svg" alt="Ícone abelha">
         </section>
 
-        <article>
-            <section id="title">
+        <!-- Conteúdo Pincipal -->
+        <article class="content" id="sobre">
+
+            <section class="title">
                 <h1>Lobo Cinza</h1>
                 <p>da família Cani Lupus</p>
-            </section id="title">
-            <section id="caracteristicas">
-                <div id="kg">
-                    <span class="numero">72</span>
-                    <span class="rotulo">kg</span>
+            </section>
+
+            <section class="characteristics">
+                <div class="characteristics-item kg">
+                    <span class="number">72</span>
+                    <span class="label">kg</span>
                 </div>
-                <div id="age">
-                    <span class="numero">13</span>
-                    <span class="rotulo">age</span>
+                <div class="characteristics-item age">
+                    <span class="number">13</span>
+                    <span class="label">age</span>
                 </div>
             </section>
-            <p id="introduction">
+
+            <p class="introduction">
                 É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e estudos genéticos reafirmam que o lobo cinzento é ancestral do cão doméstico
             </p>
-            <img src="imgs/wolf1.jpg" alt="lobo1" id="lobo1">
-            <p id="destaque">
+
+            <img src="imgs/wolf1.jpg" alt="Wolf 1" class="wolves wolf-1">
+
+            <p class="emphasis">
                 É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e estudos.
             </p>
-            <img src="imgs/wolf2.jpg" alt="lobo2" id="lobo2">
-            <p class="p">
+
+            <img src="imgs/wolf2.jpg" alt="Wolf 2" class="wolves wolf-2">
+
+            <p class="p1">
                 O peso e tamanho dos lobos variam muito em todo o mundo, tendendo a aumentar proporcionalmente com a latitude, como previsto pela teoria de Christian Bergmann. Em geral, a altura, medida a partir dos ombros, varia de 60 a 95 centímetros.
             </p>
-            <p class="p">
+            <p class="p2">
                 O peso varia geograficamente. Em média, os lobos europeus pesam 38,5 kg; os lobos da América do Norte, 36 kg; os lobos indianos e árabes, 25 kg.[7] Embora raros, lobos com mais de 77 kg foram encontrados no Alasca, Canadá,[8] e na antiga União Soviética.
             </p>
-            <blockquote cite="https://www.pensador.com/frase/MzgxOQ/">
+
+            <blockquote class="quote" cite="https://www.pensador.com/frase/MzgxOQ/">
                 <p>“Quero dizer-vos a diferença entre o lobo e o homem: nenhuma, excepto uma, na velhice... o lobo entra nos bosques para esperar o seu fim sozinho: o homem, quanto mais sente que a morte se aproxima, mais busca companhia, mesmo se ele se aborrece e se ela o aborrece.”</p>
             </blockquote>
-            <ul>
+
+            <ul class="attributes">
                 <li>Surgiu: 12.000 anos</li>
                 <li>Tipo: Mamífero</li>
                 <li>Idade Média: 13 anos</li>
@@ -71,25 +84,27 @@
                 <li>Fêmea adulta: 55kg</li>
                 <li>Família: Lupus</li>
             </ul>
-            <section id="sect-p">
-                <p>
-                    É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e estudos genéticos reafirmam que o lobo cinzento é ancestral do cão doméstico.
-                </p>
-                <p>
-                    É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e estudos genéticos reafirmam que o lobo cinzento é ancestral do cão doméstico.
-                </p>
+            
+            <section class="information">
+                <p>É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e estudos genéticos reafirmam que o lobo cinzento é ancestral do cão doméstico.</p>
+                <p>É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e estudos genéticos reafirmam que o lobo cinzento é ancestral do cão doméstico.</p>
             </section>
-            <img src="imgs/wolf3.jpg" alt="lobo3" id="lobo3">
+
+            <img src="imgs/wolf3.jpg" alt="Wolf 3" class="wolves wolf-3">
+
         </article>
 
-        <aside>
-            <img src="imgs/anuncio-1.jpg" alt="advert">
-            <img src="imgs/anuncio-2.jpg" alt="advert">
+        <!-- Anúncios -->
+        <aside class="ads">
+            <img src="imgs/anuncio-1.jpg" alt="ad">
+            <img src="imgs/anuncio-2.jpg" alt="ad">
         </aside>
 
-        <footer>
+        <!-- Rodapé -->
+        <footer class="footer" id="footer">
             <p>Origamid © 2012 - 2017. Alguns direitos reservados.</p>
         </footer>
+
     </main>
 </body>
 </html>
