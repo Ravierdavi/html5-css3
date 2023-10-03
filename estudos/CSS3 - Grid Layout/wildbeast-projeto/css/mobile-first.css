@@ -91,7 +91,6 @@ body {
 /* Barra de navegação */
 .sidenav {
     grid-area: sidenav;
-    position: relative;
     padding-left: 20px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -102,9 +101,9 @@ body {
 .sidenav::before {
     content: "➡";
     position: absolute;
-    top: -3px;
+    top: 148px;
     right: 20px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
     color: var(--color-dark-purple);
     animation: arrow .5s ease-in 0s infinite alternate;
