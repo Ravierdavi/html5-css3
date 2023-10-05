@@ -3,11 +3,8 @@
 
 /* Animações */
 @keyframes arrow {
-    from {
-        right: 30px;
-    }
     to {
-        right: 20px;
+        transform: translateX(10px);
     }
 }
 
@@ -51,6 +48,7 @@ body {
     row-gap: 15px;
     padding: 10px 0;
     background-image: linear-gradient(to right, var(--color-dark-purple), var(--color-light-purple));
+    transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .header .logo {
@@ -91,22 +89,23 @@ body {
 /* Barra de navegação */
 .sidenav {
     grid-area: sidenav;
-    padding-left: 20px;
+    padding-left: 30px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     display: flex;
+    transition: 1s ease-out;
 }
 
 .sidenav::before {
     content: "➡";
     position: absolute;
     top: 148px;
-    right: 20px;
+    right: 30px;
     font-size: 1.4em;
     font-weight: bold;
     color: var(--color-dark-purple);
-    animation: arrow .5s ease-in 0s infinite alternate;
+    animation: arrow .5s ease-in infinite alternate;
 }
 
 .sidenav img {
@@ -128,6 +127,7 @@ body {
     display: grid;
     row-gap: 30px;
     padding: 20px;
+    transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .content > p, .information p {
@@ -238,6 +238,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     gap: 30px;
     padding: 30px;
+    transition: 1s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .ads img {
